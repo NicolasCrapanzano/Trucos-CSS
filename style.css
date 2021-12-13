@@ -233,14 +233,19 @@
     animation-name: textBlinkBlack;
 }
 .blinkBottom{
-    color: black;
-    animation: 1.2s linear infinite;
-    animation-name: textBlinkWhite;
+    color: black;    
+    animation: 3s move-in-steps  steps(1) infinite;
+    animation-name: catBlinkBottom;
+}
+.blinkMid{
+    color: rgba(255, 255, 255, 0);
+    animation: 3s move-in-steps  steps(1) infinite;
+    animation-name: catBlinkMid;
 }
 .blinkTop{
-    color: black;
-    animation: 0.2s ease-in-out 1.2s infinite;
-    animation-name: textBlinkBlack;
+    color: rgba(255, 255, 255, 0);    
+    animation: 3s move-in-steps  steps(1) infinite;
+    animation-name: catBlinkTop;
 }
 .lettersP{
     display: inline-block;
@@ -273,6 +278,30 @@
 @keyframes textBlinkBlack{
     50% {
         color: black;
+    }
+}
+@keyframes catBlinkBottom{
+    25% {
+        color: white;
+    }
+}
+@keyframes catBlinkMid{
+    25% {
+        color: black;
+    }
+    50%{
+        color: rgba(255, 255, 255, 0);
+    }
+    60%{
+        color: black;
+    }
+}
+@keyframes catBlinkTop{
+    50% {
+        color: black;
+    }
+    60%{
+        color: rgba(255, 255, 255, 0);
     }
 }
 @keyframes textUncover{
