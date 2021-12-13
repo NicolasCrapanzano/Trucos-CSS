@@ -259,6 +259,11 @@
 }
 .absolutePos{
     position: absolute;
+    top: 0;
+}
+.relativePos{
+    position: relative;
+    padding-bottom: 351px;
 }
 .index1{
     z-index: 1;
@@ -269,6 +274,36 @@
 .noVMargin{
     margin-top: 0px;
     margin-bottom: 0px;
+}
+.imageDisplay{
+    height: 595px;
+    width: 595px;
+    
+}
+
+.maeImg{
+    background-image: url(mae.jpg);
+}
+.asciiart-wrap {
+    background: #000;
+}
+.asciiart{
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    word-break: break-all;
+    color: #fff;
+    font-family: monospace;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    margin-bottom: 30px;
+    padding: 1px;
+    text-align: justify;
 }
 @keyframes textBlinkWhite{
     50% {
