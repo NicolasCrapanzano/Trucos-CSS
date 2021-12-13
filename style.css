@@ -1,0 +1,282 @@
+.shadowAnim{
+    animation: 2s ease-in-out infinite;
+    animation-name: textShadow;
+}
+.textAnim{
+    animation: 2s ease-in-out infinite;
+    animation-name: textColAnim;
+}
+.textShadowAnim{
+    animation: 4s ease-in-out infinite;
+    animation-name: textShadowAndColor;
+}
+.textShadowAnim2{
+    animation: 4s ease-in-out infinite;
+    animation-delay: 0.3s;
+    animation-name: textShadowAndColor;
+}
+.textShadowAnim3{
+    animation: 4s ease-in-out 0.6s infinite;    
+    animation-name: textShadowAndColor;
+}
+.textShadowAnim4{
+    animation: 4s ease-in-out 0.9s infinite;    
+    animation-name: textShadowAndColor;
+}
+.textShadowAnim5{
+    animation: 4s ease-in-out 1.2s infinite;    
+    animation-name: textShadowAndColor;
+}
+.textShadowAnim6{
+    animation: 4s ease-in-out 1.5s infinite;    
+    animation-name: textShadowAndColor;
+}
+.textShadowAnim7{
+    animation: 4s ease-in-out 1.8s infinite;    
+    animation-name: textShadowAndColor;
+}
+.textShadowAnim8{
+    animation: 4s ease-in-out 2.1s infinite;    
+    animation-name: textShadowAndColor;
+}
+.textShadowAnim9{
+    animation: 4s ease-in-out 2.4s infinite;    
+    animation-name: textShadowAndColor;
+}
+.textShadowAnim10{
+    animation: 4s ease-in-out 2.7s infinite;    
+    animation-name: textShadowAndColor;
+}
+.textShadowAnim11{
+    animation: 4s ease-in-out 3.0s infinite;    
+    animation-name: textShadowAndColor;
+}
+.textShadowAnim12{
+    animation: 4s ease-in-out 3.3s infinite;    
+    animation-name: textShadowAndColor;
+}
+.textShadowAnim13{
+    animation: 4s ease-in-out 3.6s infinite;    
+    animation-name: textShadowAndColor;
+}
+.textShadowAnim14{
+    animation: 4s ease-in-out 3.9s infinite;    
+    animation-name: textShadowAndColor;
+}
+.textShadowAnim15{
+    animation: 4s ease-in-out 4.2s infinite;    
+    animation-name: textShadowAndColor;
+}
+
+.textUncover{
+    color: white;
+    animation: 1s ease-in-out 0.5s infinite;
+    animation-name: textBlinkBlack;
+}
+.textUncover2{
+    color: white;
+    animation: 1s ease-in-out 1s infinite;
+    animation-name: textBlinkBlack;
+}
+.textUncover3{
+    color: white;
+    animation: 1s ease-in-out 1.5s infinite;
+    animation-name: textBlinkBlack;
+}
+.textUncover4{
+    color: white;
+    animation: 1s ease-in-out 2s infinite;
+    animation-name: textBlinkBlack;
+}
+.textUncover5{
+    color: white;
+    animation: 1s ease-in-out 2.5s infinite;
+    animation-name: textBlinkBlack;
+}
+.textUncover6{
+    color: white;
+    animation: 1s ease-in-out 3s infinite;
+    animation-name: textBlinkBlack;
+}
+.textUncover7{
+    color: white;
+    animation: 1s ease-in-out 3.5s infinite;
+    animation-name: textBlinkBlack;
+}
+.textUncover8{
+    color: white;
+    animation: 1s ease-in-out 4s infinite;
+    animation-name: textBlinkBlack;
+}
+.textUncover9{
+    color: white;
+    animation: 1s ease-in-out 4.5s infinite;
+    animation-name: textBlinkBlack;
+}
+.textUncover10{
+    color: white;
+    animation: 1s ease-in-out 5s infinite;
+    animation-name: textBlinkBlack;
+}
+.textUncover11{
+    color: white;
+    animation: 1s ease-in-out 5.5s infinite;
+    animation-name: textBlinkBlack;
+}
+.textUncover12{
+    color: white;
+    animation: 1s ease-in-out 6s infinite;
+    animation-name: textBlinkBlack;
+}
+.textUncover13{
+    color: white;
+    animation: 1s ease-in-out 6.5s infinite;
+    animation-name: textBlinkBlack;
+}
+.textUncover14{
+    color: white;
+    animation: 1s ease-in-out 7s infinite;
+    animation-name: textBlinkBlack;
+}
+.textUncover15{
+    color: white;
+    animation: 1s ease-in-out 7.5s infinite;
+    animation-name: textBlinkBlack;
+}
+
+.textwrite{
+    color: white;
+    animation: 1s ease-in-out 0.5s forwards;
+    animation-name: textUncover;
+}
+.textwrite2{
+    color: white;
+    animation: 1s ease-in-out 1s forwards;
+    animation-name: textUncover;
+}
+.textwrite3{
+    color: white;
+    animation: 1s ease-in-out 1.5s forwards;
+    animation-name: textUncover;
+}
+.textwrite4{
+    color: white;
+    animation: 1s ease-in-out 2s forwards;
+    animation-name: textUncover;
+}
+.textwrite5{
+    color: white;
+    animation: 1s ease-in-out 2.5s forwards;
+    animation-name: textUncover;
+}
+.textwrite6{
+    color: white;
+    animation: 1s ease-in-out 3s forwards;
+    animation-name: textUncover;
+}
+.textwrite7{
+    color: white;
+    animation: 1s ease-in-out 3.5s forwards;
+    animation-name: textUncover;
+}
+.textwrite8{
+    color: white;
+    animation: 1s ease-in-out 4s forwards;
+    animation-name: textUncover;
+}
+.textwrite9{
+    color: white;
+    animation: 1s ease-in-out 4.5s forwards;
+    animation-name: textUncover;
+}
+.textwrite10{
+    color: white;
+    animation: 1s ease-in-out 5s forwards;
+    animation-name: textUncover;
+}
+.textwrite11{
+    color: white;
+    animation: 1s ease-in-out 5.5s forwards;
+    animation-name: textUncover;
+}
+.textwrite12{
+    color: white;
+    animation: 1s ease-in-out 6s forwards;
+    animation-name: textUncover;
+}
+.textwrite13{
+    color: white;
+    animation: 1s ease-in-out 6.5s forwards;
+    animation-name: textUncover;
+}
+.textwrite14{
+    color: white;
+    animation: 1s ease-in-out 7s forwards;
+    animation-name: textUncover;
+}
+.textwrite15{
+    color: white;
+    animation: 1s ease-in-out 7.5s forwards;
+    animation-name: textUncover;
+}
+
+
+
+.textBlinkW{
+    color: black;
+    animation: 1s ease-in-out infinite;
+    animation-name: textBlinkWhite;
+}
+.textBlinkB{
+    color: white;
+    animation: 1s ease-in-out infinite;
+    animation-name: textBlinkBlack;
+}
+.lettersP{
+    display: inline-block;
+    letter-spacing: 0px;
+}
+.lettersSpan{
+    letter-spacing: 0px;
+}
+.flex{
+    display: flex;
+}
+.noVMargin{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+@keyframes textBlinkWhite{
+    50% {
+        color: white;
+    }
+}
+@keyframes textBlinkBlack{
+    50% {
+        color: black;
+    }
+}
+@keyframes textUncover{
+    50% {
+        color: white;
+    }
+    100%{
+        color: black;
+    }
+}
+@keyframes textColAnim{
+    50% {
+        color: #d2738a;
+    }
+}
+@keyframes textShadowAndColor{
+    50% {
+        color: #d2738a;
+        text-shadow: #d2738a 1px 4px 5px;
+    }
+}
+@keyframes textShadow{
+    50% {
+        text-shadow: #d2738a 1px 4px 5px;
+    }
+}
