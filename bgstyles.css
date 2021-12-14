@@ -1,0 +1,56 @@
+.grid{
+    display: grid;
+}
+.col2{
+    grid-template-columns: 50% 50%;
+}
+.absolute{
+    position: absolute;
+}
+.left{
+    background-color: skyblue;
+    height: 100vh;
+    
+}
+.right{
+    background-color: slateblue;
+    height: 100vh;
+}
+.mainContainer{
+    background-color: burlywood;
+    height: 100vh;
+    width: 60vw;
+    top: 0;
+    left: 20%;
+}
+.textCenter{
+    text-align: center;
+}
+.test{
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+}
+.bird{
+    display: block;
+    animation: flyingBird 4s ,textShadowAndColor 4s;
+}
+
+@keyframes flyingBird{
+    0%{
+        transform: translateX(-100px);
+        
+    }
+    25%{
+        transform: translateX(170px);
+        transform: translateY(280px);
+    }
+    50%{
+        transform: translateX(100%);        
+    }
+    75%{
+        transform: translateX(600px);
+        transform: translateY(70%);
+    }
+
+}
