@@ -1,3 +1,6 @@
+body{
+    overflow-x: hidden;
+}
 .grid{
     display: grid;
 }
@@ -28,29 +31,53 @@
 }
 .test{
     top: 0;
+    left: 0;
     width: 100vw;
     height: 100vh;
 }
 .bird{
     display: block;
-    animation: flyingBird 4s ,textShadowAndColor 4s;
+    animation: flyingBird 10s ,textShadowAndColor 4s;
 }
-
+.flip{
+    animation: 3s linear infinite;    
+    
+}
+.dogwalk{
+    margin-top: 15%;
+    animation: marqueeL 10s linear infinite;
+}
 @keyframes flyingBird{
     0%{
-        transform: translateX(-100px);
+        transform: translateX(-100%);
         
     }
     25%{
-        transform: translateX(170px);
-        transform: translateY(280px);
+        transform: translate(100%,600px);
+        
     }
     50%{
-        transform: translateX(100%);        
+        transform: translate(930px,100%);
+        
     }
     75%{
-        transform: translateX(600px);
-        transform: translateY(70%);
+        transform: translate(300px,300px);
+        
     }
 
+}
+@keyframes flipAround{
+    50%{
+        transform: rotateY(180deg);
+    }
+}
+@keyframes flipVertical{
+    50%{
+        transform: rotateX(180deg);
+    }
+}
+@keyframes circlularAnim{
+    100%{
+        transform: rotateZ(360deg);
+    }
 }

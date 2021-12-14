@@ -255,11 +255,11 @@
 }
 .marqueeS{
     animation: 15s linear infinite;
-    animation-name: marquee;
+    animation-name: marqueeR;
 }
 .marqueeF{
     animation: 4s linear infinite;
-    animation-name: marquee;
+    animation-name: marqueeR;
 }
 .lettersP{
     display: inline-block;
@@ -351,12 +351,20 @@
     padding: 1px;
     text-align: justify;
 }
-@keyframes marquee{
+@keyframes marqueeR{
     0%{
         transform: translatex(100%);
     }
     100%{
         transform: translateX(-1600px);
+    }
+}
+@keyframes marqueeL{
+    0%{
+        transform: translatex(0%);
+    }
+    100%{
+        transform: translateX(100vw);
     }
 }
 @keyframes textBlinkWhite{
