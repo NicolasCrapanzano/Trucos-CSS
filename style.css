@@ -247,9 +247,26 @@
     animation: 3s move-in-steps  steps(1) infinite;
     animation-name: catBlinkTop;
 }
+.marqueeContainer{
+    
+    overflow: hidden;
+    width: 300px;
+    white-space: nowrap;
+}
+.marqueeS{
+    animation: 15s linear infinite;
+    animation-name: marquee;
+}
+.marqueeF{
+    animation: 4s linear infinite;
+    animation-name: marquee;
+}
 .lettersP{
     display: inline-block;
     letter-spacing: 0px;
+}
+.inlineBlock{
+    display: inline-block;
 }
 .lettersSpan{
     letter-spacing: 0px;
@@ -261,9 +278,15 @@
     position: absolute;
     top: 0;
 }
-.relativePos{
+.catRelativePos{
     position: relative;
     padding-bottom: 351px;
+}
+.relativePos{
+    position: relative;
+}
+.underlineTxt{
+    transform: translateY(10px);
 }
 .index1{
     z-index: 1;
@@ -280,7 +303,21 @@
     width: 595px;
     
 }
-
+.block{
+    display: block;
+}
+.padding50{
+    padding-top: 50px;
+}
+.strike{
+    text-decoration: line-through;
+}
+.transparent{
+    color: rgba(255, 255, 255, 0);
+}
+.textBlack{
+    color: black;
+}
 .maeImg{
     background-image: url(mae.jpg);
 }
@@ -304,6 +341,14 @@
     margin-bottom: 30px;
     padding: 1px;
     text-align: justify;
+}
+@keyframes marquee{
+    0%{
+        transform: translatex(100%);
+    }
+    100%{
+        transform: translateX(-1600px);
+    }
 }
 @keyframes textBlinkWhite{
     50% {
