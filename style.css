@@ -315,8 +315,18 @@
 .block{
     display: block;
 }
-.padding50{
-    padding-top: 50px;
+.hidden{
+    display: none;
+}
+.visible{
+    display: initial;
+}
+#tutorial{
+    word-wrap: break-word;
+    width: 1000px;
+}
+.padding70{
+    padding-top: 70px;
 }
 .strike{
     text-decoration: line-through;
@@ -327,18 +337,45 @@
 .textBlack{
     color: black;
 }
+.displayTextV{
+    overflow-wrap: break-word;
+    width: 5px;
+    margin: 3px;
+}
 .maeImg{
     background-image: url(mae.jpg);
+}
+.dogGif{
+    size: 50%;
+    background-image: url(dogwalk.gif);
 }
 .asciiart-wrap {
     background: #000;
 }
-.asciiart{
+.asciiartCover{
     -webkit-background-clip: text;
     background-clip: text;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    word-break: break-all;
+    color: #fff;
+    font-family: monospace;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    margin-bottom: 30px;
+    padding: 1px;
+    text-align: justify;
+}
+.asciiartContain{
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
     -webkit-text-fill-color: transparent;
     text-fill-color: transparent;
     word-break: break-all;
