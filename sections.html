@@ -12,28 +12,94 @@
     <div>
         <!-- left and right background -->
         <div class="grid col2">
-            <div class="left index1"></div>
-            <div class="right index1"></div>
+            <div class="left bgIndex1 index1"></div>
+            <div class="right bgIndex1 index1"></div>
         </div>
         <!-- Main section -->
-        <div class="mainContainer textCenter absolute index5">
+        <div class="mainContainer textCenter absolute index5" id="mainContainer">
             <div class="content" id="section1">
                 <h1 class="">Title 1</h1>
                 <button disabled>Section 1</button>
                 <button onclick="sectionSwap('section1','section2')">Section 2</button>
                 <button onclick="sectionSwap('section1','section3')">Section 3</button>
+                <div>
+                    <div>
+                        <h1>individual mods</h1>
+                        <h3>text color & shadow</h3>
+                        <p class="textShadowAnim">TEST</p>
+                        <h3>shadow</h3>
+                        <p class="shadowAnim">TEST</p>
+                        <h3>text color</h3>
+                        <p class="textAnim">TEST</p>
+                        <h3>blink! (for white bg)</h3>
+                        <p class="textBlinkW">TEST</p>
+                        <h3>blink! (for black bg)</h3>
+                        <p class="textBlinkB">TEST</p>
+                    </div>
+                    <div>
+                        <h1>sync mods(with delay)</h1>
+                        <p class="textShadowAnim">TEST</p>
+                        <p class="textShadowAnim2">TEST</p>
+                        <p class="textShadowAnim3">TEST</p>
+                        <p class="textShadowAnim4">TEST</p>
+                        <p class="textShadowAnim5">TEST</p>
+                    </div>
+                    <div>
+                        <h1>individual letters (using p)</h1>
+                        <div class="flex">
+                            <p class="textShadowAnim lettersP">T</p>
+                            <p class="textShadowAnim2 lettersP">E</p>
+                            <p class="textShadowAnim3 lettersP">S</p>
+                            <p class="textShadowAnim4 lettersP">T</p>
+                        </div>
+                        
+                    </div>
+                    <div>
+                        <h1>individual letters (using span)</h1>
+                        <div class="flex">
+                            <span class="textShadowAnim lettersSpan">T</span>
+                            <span class="textShadowAnim2 lettersSpan">E</span>
+                            <span class="textShadowAnim3 lettersSpan">S</span>
+                            <span class="textShadowAnim4 lettersSpan">T</span>
+                        </div>
+                        <p><i>for both this cases put the text inside a flex display or there will be spacing between letters</i></p>
+                    </div>
+                    <div >
+                        <h1>text scratch with under text</h1>
+                        <div class="relativePos">
+                            <div class="flex">
+                                <p class="noVMargin absolutePos index1">
+                                    Lorem ipsum dolor sit amet, <i class="strike"> consectetur </i> adipisicing elit. Suscipit, ipsum?
+                                </p>
+                                <span class="transparent absolutePos index5 underlineTxt">Lorem ipsum dolor sit amet,█<i class="textBlack">reemplazo</i> adipisicing elit. Suscipit, ipsum?</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <!--https://css-tricks.com/almanac/properties/t/text-overflow/-->
+                        <h1>marquee</h1>
+                        <div class="marqueeContainer">
+                            <p class="marqueeS">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, pariatur natus harum porro sunt optio iste facere maiores laborum tenetur ex doloribus perspiciatis possimus enim facilis accusamus repellendus nulla quia!</p>
+                        </div>
+                        <div class="marqueeContainer">
+                            <p class="marqueeF">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, pariatur natus harum porro sunt optio iste facere maiores laborum tenetur ex doloribus perspiciatis possimus enim facilis accusamus repellendus nulla quia!</p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="content hidden" id="section2">
                 <h1 class="textCenter">Title 2</h1>
                 <button onclick="sectionSwap('section2','section1')">Section 1</button>
                 <button disabled>Section 2</button>
                 <button onclick="sectionSwap('section2','section3')">Section 3</button>
+                <div></div>
             </div>
             <div class="content hidden" id="section3">
                 <h1 class="textCenter">Title 3</h1>
                 <button onclick="sectionSwap('section3','section1')">Section 1</button>
                 <button onclick="sectionSwap('section3','section2')">Section 2</button>
                 <button disabled>Section 3</button>
+                <div></div>
             </div>
         </div>
         <!-- use this section to add some cool effects on the background -->
@@ -43,6 +109,14 @@
     </div>
 
     <script>
+        let mainDiv = document.getElementById("mainContainer");
+        let bgIndex1 = document.getElementsByClassName("bgIndex1");
+        let mainHeight = mainDiv.offsetHeight;
+        
+        for (let index = 0; index < bgIndex1.length; index++) {                        
+            bgIndex1[index].style.height = mainHeight + "px";
+        }
+
         function sectionSwap(current,next){
             let sections = ["section1","section2","section3"];
             let Celement = document.getElementById(current);
@@ -51,6 +125,7 @@
             Celement.classList.add("hidden");
             Nelement.classList.remove("hidden");
         }
+
     </script>
 </body>
 </html>

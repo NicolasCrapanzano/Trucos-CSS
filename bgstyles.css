@@ -1,5 +1,6 @@
 body{
     overflow-x: hidden;
+    min-height: 100vh;
 }
 .grid{
     display: grid;
@@ -10,18 +11,18 @@ body{
 .absolute{
     position: absolute;
 }
+.bgIndex1{
+    
+}
 .left{
     background-color: skyblue;
-    height: 100vh;
-    
 }
 .right{
     background-color: slateblue;
-    height: 100vh;
 }
 .mainContainer{
     background-color: burlywood;
-    height: 100vh;
+    
     width: 60vw;
     top: 0;
     left: 20%;
