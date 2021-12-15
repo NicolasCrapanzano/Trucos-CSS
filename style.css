@@ -254,7 +254,9 @@
     animation-name: catBlinkTop;
 }
 
-
+.testpush{
+    color: red;
+}
 .marqueeContainer{
     margin-left: 36%;
     margin-top: 2px;
