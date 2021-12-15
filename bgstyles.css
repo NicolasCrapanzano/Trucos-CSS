@@ -12,7 +12,7 @@ body{
     position: absolute;
 }
 .bgIndex1{
-    
+
 }
 .left{
     background-color: skyblue;
@@ -22,14 +22,18 @@ body{
 }
 .mainContainer{
     background-color: burlywood;
-    
     width: 60vw;
     top: 0;
     left: 20%;
 }
+
 .textCenter{
     text-align: center;
 }
+.textLeft{
+    text-align: left;
+}
+
 .test{
     top: 0;
     left: 0;
