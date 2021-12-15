@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="utilities.js"></script>
     <title>Animacion</title>
 </head>
 <body>
@@ -154,7 +155,7 @@
     <div >
         <!-- &nbsp; this creates a blank space (as in pressing space), this is mandatory since the p tag will delete spaces on this implementation -->
         <h1>Cat insert(horizontal wave)</h1>
-        <button onclick="visible()">?</button>
+        <button onclick="visible('tutorial')">?</button>
         <h3 class="hidden" id="tutorial">This implementation is a little bit more complicated, and im sure there is another (more practical) method to do this. Essentialy im re-using the textshadowanim, in the same manner i did with the individual letters, but since this ascii drawing is more complex, i broke up each vertical line on the original and put them on an horizontal 'p', then you need to force a word wrap so the p display from top to bottom instead of left to right (duh!), use a word wrap and force the width to 1 char lenght(like 4px).</p></h3>
         <div class="flex">
             <p class="noVMargin textShadowAnim displayTextV">░░░░░░░░░░▀▒▒▒▒</p>
@@ -184,6 +185,12 @@
             <p class="noVMargin textShadowAnim displayTextV">░░░░▒▒▒▒█▒▒█▐▒▒</p>
             <p class="noVMargin textShadowAnim displayTextV">▌▌▌▌█▒▒▄▄▀▒▀▒▒▄</p>
             <p class="noVMargin textShadowAnim displayTextV">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▀▒▄█▀▒░▀▒▀</p>
+            <p class="noVMargin textShadowAnim displayTextV"></p>
+            <p class="noVMargin textShadowAnim displayTextV"></p>
+            <p class="noVMargin textShadowAnim displayTextV"></p>
+            <p class="noVMargin textShadowAnim displayTextV"></p>
+            <p class="noVMargin textShadowAnim displayTextV"></p>
+            <p class="noVMargin textShadowAnim displayTextV"></p>
             <p class="noVMargin textShadowAnim displayTextV"></p>
             <p class="noVMargin textShadowAnim displayTextV"></p>
         </div>
@@ -361,15 +368,5 @@
         </div>
     </div>
 
-    <!-- this js controls the toggle on the tutorial, prob. should have used an actual toggle instead of this, oh well . . .-->
-    <script>
-        function visible(){
-            var element = document.getElementById("tutorial");
-            if( element.classList.contains("hidden") ){
-                element.classList.remove("hidden");
-                element.classList.add("block");
-            }
-        }
-    </script>
 </body>
 </html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bgstyles.css">
+    <title>animated bg</title>
+</head>
+<body>
+    <div>
+        <!-- left and right background -->
+        <div class="grid col2">
+            <div class="left index1"></div>
+            <div class="right index1"></div>
+        </div>
+        <!-- Main section -->
+        <div class="mainContainer textCenter absolute index5">
+            <div class="content" id="section1">
+                <h1 class="">Title 1</h1>
+                <button disabled>Section 1</button>
+                <button onclick="sectionSwap('section1','section2')">Section 2</button>
+                <button onclick="sectionSwap('section1','section3')">Section 3</button>
+            </div>
+            <div class="content hidden" id="section2">
+                <h1 class="textCenter">Title 2</h1>
+                <button onclick="sectionSwap('section2','section1')">Section 1</button>
+                <button disabled>Section 2</button>
+                <button onclick="sectionSwap('section2','section3')">Section 3</button>
+            </div>
+            <div class="content hidden" id="section3">
+                <h1 class="textCenter">Title 3</h1>
+                <button onclick="sectionSwap('section3','section1')">Section 1</button>
+                <button onclick="sectionSwap('section3','section2')">Section 2</button>
+                <button disabled>Section 3</button>
+            </div>
+        </div>
+        <!-- use this section to add some cool effects on the background -->
+        <div class="absolute index2 test">
+            
+        </div>
+    </div>
+
+    <script>
+        function sectionSwap(current,next){
+            let sections = ["section1","section2","section3"];
+            let Celement = document.getElementById(current);
+            let Nelement = document.getElementById(next);
+
+            Celement.classList.add("hidden");
+            Nelement.classList.remove("hidden");
+        }
+    </script>
+</body>
+</html>
