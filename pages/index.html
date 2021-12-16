@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="bgstyles.css">
-    <script src="utilities.js"></script>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/bgstyles.css">
+    <script src="../js/utilities.js"></script>
     <title>animated bg</title>
 </head>
 <body>
@@ -39,12 +39,12 @@
                 <div>
                     <div>
                         <h1>individual mods</h1>
-                        <h3>text color & shadow</h3>
-                        <p class="textShadowAnim">TEST</p>
                         <h3>shadow</h3>
                         <p class="shadowAnim">TEST</p>
                         <h3>text color</h3>
                         <p class="textAnim">TEST</p>
+                        <h3>text color & shadow</h3>
+                        <p class="textShadowAnim" style="--delay: 0s">TEST</p>
                         <h3>blink! (for white bg)</h3>
                         <p class="textBlinkW">TEST</p>
                         <h3>blink! (for black bg)</h3>
@@ -52,29 +52,29 @@
                     </div>
                     <div>
                         <h1>sync mods(with delay)</h1>
-                        <p class="textShadowAnim">TEST</p>
-                        <p class="textShadowAnim2">TEST</p>
-                        <p class="textShadowAnim3">TEST</p>
-                        <p class="textShadowAnim4">TEST</p>
-                        <p class="textShadowAnim5">TEST</p>
+                        <p class="textShadowAnim" style="--delay: 0.3s">TEST</p>
+                        <p class="textShadowAnim" style="--delay: 0.6s">TEST</p>
+                        <p class="textShadowAnim" style="--delay: 0.9s">TEST</p>
+                        <p class="textShadowAnim" style="--delay: 1.2s">TEST</p>
+                        <p class="textShadowAnim" style="--delay: 1.5s">TEST</p>
                     </div>
                     <div>
                         <h1>individual letters (using p)</h1>
                         <div class="flex textShadowMargin">
-                            <p class="textShadowAnim lettersP">T</p>
-                            <p class="textShadowAnim2 lettersP">E</p>
-                            <p class="textShadowAnim3 lettersP">S</p>
-                            <p class="textShadowAnim4 lettersP">T</p>
+                            <p class="textShadowAnim lettersSpan" style="--delay: 0.3s">T</p>
+                            <p class="textShadowAnim lettersSpan" style="--delay: 0.6s">E</p>
+                            <p class="textShadowAnim lettersSpan" style="--delay: 0.9s">S</p>
+                            <p class="textShadowAnim lettersSpan" style="--delay: 1.2s">T</p>
                         </div>
                         
                     </div>
                     <div>
                         <h1>individual letters (using span)</h1>
                         <div class="flex textShadowMargin">
-                            <span class="textShadowAnim lettersSpan">T</span>
-                            <span class="textShadowAnim2 lettersSpan">E</span>
-                            <span class="textShadowAnim3 lettersSpan">S</span>
-                            <span class="textShadowAnim4 lettersSpan">T</span>
+                            <span class="textShadowAnim lettersSpan" style="--delay: 0.3s">T</span>
+                            <span class="textShadowAnim lettersSpan" style="--delay: 0.6s">E</span>
+                            <span class="textShadowAnim lettersSpan" style="--delay: 0.9s">S</span>
+                            <span class="textShadowAnim lettersSpan" style="--delay: 1.2s">T</span>
                         </div>
                         <p><i>for both this cases put the text inside a flex display or there will be spacing between letters</i></p>
                     </div>
@@ -92,11 +92,17 @@
                     <div>
                         <!--https://css-tricks.com/almanac/properties/t/text-overflow/-->
                         <h1>marquee</h1>
+                        <h3> Smooth marquee</h3>
                         <div class="marqueeContainer">
                             <p class="marqueeS">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, pariatur natus harum porro sunt optio iste facere maiores laborum tenetur ex doloribus perspiciatis possimus enim facilis accusamus repellendus nulla quia!</p>
                         </div>
+                        <h3> Fast marquee</h3>
                         <div class="marqueeContainer">
                             <p class="marqueeF">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, pariatur natus harum porro sunt optio iste facere maiores laborum tenetur ex doloribus perspiciatis possimus enim facilis accusamus repellendus nulla quia!</p>
+                        </div>
+                        <h3>like the original < marquee > tag</h3>
+                        <div class="marqueeContainer">
+                            <p class="marquee">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, pariatur natus harum porro sunt optio iste facere maiores laborum tenetur ex doloribus perspiciatis possimus enim facilis accusamus repellendus nulla quia!</p>
                         </div>
                     </div>
                 </div>
@@ -142,109 +148,111 @@
                     </div>
                     <div class="catMargin">
                         <h1>Cat insert(anim)</h1>
-                        <p class="noVMargin textShadowAnim">░░░░░░░░░░░░░░░░░░░░░▄▀░░▌</p>
-                        <p class="noVMargin textShadowAnim">░░░░░░░░░░░░░░░░░░░▄▀▐░░░▌</p>
-                        <p class="noVMargin textShadowAnim">░░░░░░░░░░░░░░░░▄▀▀▒▐▒░░░▌</p>
-                        <p class="noVMargin textShadowAnim">░░░░░▄▀▀▄░░░▄▄▀▀▒▒▒▒▌▒▒░░▌</p>
-                        <p class="noVMargin textShadowAnim">░░░░▐▒░░░▀▄▀▒▒▒▒▒▒▒▒▒▒▒▒▒█</p>
-                        <p class="noVMargin textShadowAnim">░░░░▌▒░░░░▒▀▄▒▒▒▒▒▒▒▒▒▒▒▒▒▀▄</p>
-                        <p class="noVMargin textShadowAnim">░░░░▐▒░░░░░▒▒▒▒▒▒▒▒▒▌▒▐▒▒▒▒▒▀▄</p>
-                        <p class="noVMargin textShadowAnim">░░░░▌▀▄░░▒▒▒▒▒▒▒▒▐▒▒▒▌▒▌▒▄▄▒▒▐</p>
-                        <p class="noVMargin textShadowAnim">░░░▌▌▒▒▀▒▒▒▒▒▒▒▒▒▒▐▒▒▒▒▒█▄█▌▒▒▌</p>
-                        <p class="noVMargin textShadowAnim">░▄▀▒▐▒▒▒▒▒▒▒▒▒▒▒▄▀█▌▒▒▒▒▒▀▀▒▒▐░░░▄</p>
-                        <p class="noVMargin textShadowAnim">▀▒▒▒▒▌▒▒▒▒▒▒▒▄▒▐███▌▄▒▒▒▒▒▒▒▄▀▀▀▀</p>
-                        <p class="noVMargin textShadowAnim">▒▒▒▒▒▐▒▒▒▒▒▄▀▒▒▒▀▀▀▒▒▒▒▄█▀░░▒▌▀▀▄▄</p>
-                        <p class="noVMargin textShadowAnim">▒▒▒▒▒▒█▒▄▄▀▒▒▒▒▒▒▒▒▒▒▒░░▐▒▀▄▀▄░░░░▀</p>
-                        <p class="noVMargin textShadowAnim">▒▒▒▒▒▒▒█▒▒▒▒▒▒▒▒▒▄▒▒▒▒▄▀▒▒▒▌░░▀▄</p>
-                        <p class="noVMargin textShadowAnim">▒▒▒▒▒▒▒▒▀▄▒▒▒▒▒▒▒▒▀▀▀▀▒▒▒▄▀</p>
+                        <p class="noVMargin textShadowAnim" style="--delay: 0s">░░░░░░░░░░░░░░░░░░░░░▄▀░░▌</p>
+                        <p class="noVMargin textShadowAnim" style="--delay: 0s">░░░░░░░░░░░░░░░░░░░▄▀▐░░░▌</p>
+                        <p class="noVMargin textShadowAnim" style="--delay: 0s">░░░░░░░░░░░░░░░░▄▀▀▒▐▒░░░▌</p>
+                        <p class="noVMargin textShadowAnim" style="--delay: 0s">░░░░░▄▀▀▄░░░▄▄▀▀▒▒▒▒▌▒▒░░▌</p>
+                        <p class="noVMargin textShadowAnim" style="--delay: 0s">░░░░▐▒░░░▀▄▀▒▒▒▒▒▒▒▒▒▒▒▒▒█</p>
+                        <p class="noVMargin textShadowAnim" style="--delay: 0s">░░░░▌▒░░░░▒▀▄▒▒▒▒▒▒▒▒▒▒▒▒▒▀▄</p>
+                        <p class="noVMargin textShadowAnim" style="--delay: 0s">░░░░▐▒░░░░░▒▒▒▒▒▒▒▒▒▌▒▐▒▒▒▒▒▀▄</p>
+                        <p class="noVMargin textShadowAnim" style="--delay: 0s">░░░░▌▀▄░░▒▒▒▒▒▒▒▒▐▒▒▒▌▒▌▒▄▄▒▒▐</p>
+                        <p class="noVMargin textShadowAnim" style="--delay: 0s">░░░▌▌▒▒▀▒▒▒▒▒▒▒▒▒▒▐▒▒▒▒▒█▄█▌▒▒▌</p>
+                        <p class="noVMargin textShadowAnim" style="--delay: 0s">░▄▀▒▐▒▒▒▒▒▒▒▒▒▒▒▄▀█▌▒▒▒▒▒▀▀▒▒▐░░░▄</p>
+                        <p class="noVMargin textShadowAnim" style="--delay: 0s">▀▒▒▒▒▌▒▒▒▒▒▒▒▄▒▐███▌▄▒▒▒▒▒▒▒▄▀▀▀▀</p>
+                        <p class="noVMargin textShadowAnim" style="--delay: 0s">▒▒▒▒▒▐▒▒▒▒▒▄▀▒▒▒▀▀▀▒▒▒▒▄█▀░░▒▌▀▀▄▄</p>
+                        <p class="noVMargin textShadowAnim" style="--delay: 0s">▒▒▒▒▒▒█▒▄▄▀▒▒▒▒▒▒▒▒▒▒▒░░▐▒▀▄▀▄░░░░▀</p>
+                        <p class="noVMargin textShadowAnim" style="--delay: 0s">▒▒▒▒▒▒▒█▒▒▒▒▒▒▒▒▒▄▒▒▒▒▄▀▒▒▒▌░░▀▄</p>
+                        <p class="noVMargin textShadowAnim" style="--delay: 0s">▒▒▒▒▒▒▒▒▀▄▒▒▒▒▒▒▒▒▀▀▀▀▒▒▒▄▀</p>
                     </div>
                     <div class="catMargin">
                         <h1>Cat insert(anim sync weird!)</h1>
-                        <p class="noVMargin textShadowAnim">░░░░░░░░░░░░░░░░░░░░░▄▀░░▌</p>
-                        <p class="noVMargin textShadowAnim2">░░░░░░░░░░░░░░░░░░░▄▀▐░░░▌</p>
-                        <p class="noVMargin textShadowAnim3">░░░░░░░░░░░░░░░░▄▀▀▒▐▒░░░▌</p>
-                        <p class="noVMargin textShadowAnim4">░░░░░▄▀▀▄░░░▄▄▀▀▒▒▒▒▌▒▒░░▌</p>
-                        <p class="noVMargin textShadowAnim5">░░░░▐▒░░░▀▄▀▒▒▒▒▒▒▒▒▒▒▒▒▒█</p>
-                        <p class="noVMargin textShadowAnim2">░░░░▌▒░░░░▒▀▄▒▒▒▒▒▒▒▒▒▒▒▒▒▀▄</p>
-                        <p class="noVMargin textShadowAnim3">░░░░▐▒░░░░░▒▒▒▒▒▒▒▒▒▌▒▐▒▒▒▒▒▀▄</p>
-                        <p class="noVMargin textShadowAnim4">░░░░▌▀▄░░▒▒▒▒▒▒▒▒▐▒▒▒▌▒▌▒▄▄▒▒▐</p>
-                        <p class="noVMargin textShadowAnim5">░░░▌▌▒▒▀▒▒▒▒▒▒▒▒▒▒▐▒▒▒▒▒█▄█▌▒▒▌</p>
-                        <p class="noVMargin textShadowAnim2">░▄▀▒▐▒▒▒▒▒▒▒▒▒▒▒▄▀█▌▒▒▒▒▒▀▀▒▒▐░░░▄</p>
-                        <p class="noVMargin textShadowAnim3">▀▒▒▒▒▌▒▒▒▒▒▒▒▄▒▐███▌▄▒▒▒▒▒▒▒▄▀▀▀▀</p>
-                        <p class="noVMargin textShadowAnim4">▒▒▒▒▒▐▒▒▒▒▒▄▀▒▒▒▀▀▀▒▒▒▒▄█▀░░▒▌▀▀▄▄</p>
-                        <p class="noVMargin textShadowAnim5">▒▒▒▒▒▒█▒▄▄▀▒▒▒▒▒▒▒▒▒▒▒░░▐▒▀▄▀▄░░░░▀</p>
-                        <p class="noVMargin textShadowAnim2">▒▒▒▒▒▒▒█▒▒▒▒▒▒▒▒▒▄▒▒▒▒▄▀▒▒▒▌░░▀▄</p>
-                        <p class="noVMargin textShadowAnim3">▒▒▒▒▒▒▒▒▀▄▒▒▒▒▒▒▒▒▀▀▀▀▒▒▒▄▀</p>
+                        <p class="noVMargin textShadowAnim" style="--delay: 0s">░░░░░░░░░░░░░░░░░░░░░▄▀░░▌</p>
+                        <p class="noVMargin textShadowAnim" style="--delay: 0.3s">░░░░░░░░░░░░░░░░░░░▄▀▐░░░▌</p>
+                        <p class="noVMargin textShadowAnim" style="--delay: 0.6s">░░░░░░░░░░░░░░░░▄▀▀▒▐▒░░░▌</p>
+                        <p class="noVMargin textShadowAnim" style="--delay: 0.9s">░░░░░▄▀▀▄░░░▄▄▀▀▒▒▒▒▌▒▒░░▌</p>
+                        <p class="noVMargin textShadowAnim" style="--delay: 0.3s">░░░░▐▒░░░▀▄▀▒▒▒▒▒▒▒▒▒▒▒▒▒█</p>
+                        <p class="noVMargin textShadowAnim" style="--delay: 0.6s">░░░░▌▒░░░░▒▀▄▒▒▒▒▒▒▒▒▒▒▒▒▒▀▄</p>
+                        <p class="noVMargin textShadowAnim" style="--delay: 0.9s">░░░░▐▒░░░░░▒▒▒▒▒▒▒▒▒▌▒▐▒▒▒▒▒▀▄</p>
+                        <p class="noVMargin textShadowAnim" style="--delay: 0.3s">░░░░▌▀▄░░▒▒▒▒▒▒▒▒▐▒▒▒▌▒▌▒▄▄▒▒▐</p>
+                        <p class="noVMargin textShadowAnim" style="--delay: 0.6s">░░░▌▌▒▒▀▒▒▒▒▒▒▒▒▒▒▐▒▒▒▒▒█▄█▌▒▒▌</p>
+                        <p class="noVMargin textShadowAnim" style="--delay: 0.9s">░▄▀▒▐▒▒▒▒▒▒▒▒▒▒▒▄▀█▌▒▒▒▒▒▀▀▒▒▐░░░▄</p>
+                        <p class="noVMargin textShadowAnim" style="--delay: 0.3s">▀▒▒▒▒▌▒▒▒▒▒▒▒▄▒▐███▌▄▒▒▒▒▒▒▒▄▀▀▀▀</p>
+                        <p class="noVMargin textShadowAnim" style="--delay: 0.6s">▒▒▒▒▒▐▒▒▒▒▒▄▀▒▒▒▀▀▀▒▒▒▒▄█▀░░▒▌▀▀▄▄</p>
+                        <p class="noVMargin textShadowAnim" style="--delay: 0.9s">▒▒▒▒▒▒█▒▄▄▀▒▒▒▒▒▒▒▒▒▒▒░░▐▒▀▄▀▄░░░░▀</p>
+                        <p class="noVMargin textShadowAnim" style="--delay: 0.3s">▒▒▒▒▒▒▒█▒▒▒▒▒▒▒▒▒▄▒▒▒▒▄▀▒▒▒▌░░▀▄</p>
+                        <p class="noVMargin textShadowAnim" style="--delay: 0.6s">▒▒▒▒▒▒▒▒▀▄▒▒▒▒▒▒▒▒▀▀▀▀▒▒▒▄▀</p>
                     </div>
                     <div class="catMargin">
                         <h1>Cat insert(anim sync half top/bottom)</h1>
-                        <p class="noVMargin textShadowAnim ">░░░░░░░░░░░░░░░░░░░░░▄▀░░▌</p>
-                        <p class="noVMargin textShadowAnim2">░░░░░░░░░░░░░░░░░░░▄▀▐░░░▌</p>
-                        <p class="noVMargin textShadowAnim3">░░░░░░░░░░░░░░░░▄▀▀▒▐▒░░░▌</p>
-                        <p class="noVMargin textShadowAnim4">░░░░░▄▀▀▄░░░▄▄▀▀▒▒▒▒▌▒▒░░▌</p>
-                        <p class="noVMargin textShadowAnim5">░░░░▐▒░░░▀▄▀▒▒▒▒▒▒▒▒▒▒▒▒▒█</p>
-                        <p class="noVMargin textShadowAnim6">░░░░▌▒░░░░▒▀▄▒▒▒▒▒▒▒▒▒▒▒▒▒▀▄</p>
-                        <p class="noVMargin textShadowAnim7">░░░░▐▒░░░░░▒▒▒▒▒▒▒▒▒▌▒▐▒▒▒▒▒▀▄</p>
-                        <p class="noVMargin textShadowAnim8">░░░░▌▀▄░░▒▒▒▒▒▒▒▒▐▒▒▒▌▒▌▒▄▄▒▒▐</p>
-                        <p class="noVMargin textShadowAnim8">░░░▌▌▒▒▀▒▒▒▒▒▒▒▒▒▒▐▒▒▒▒▒█▄█▌▒▒▌</p>
-                        <p class="noVMargin textShadowAnim7">░▄▀▒▐▒▒▒▒▒▒▒▒▒▒▒▄▀█▌▒▒▒▒▒▀▀▒▒▐░░░▄</p>
-                        <p class="noVMargin textShadowAnim6">▀▒▒▒▒▌▒▒▒▒▒▒▒▄▒▐███▌▄▒▒▒▒▒▒▒▄▀▀▀▀</p>
-                        <p class="noVMargin textShadowAnim5">▒▒▒▒▒▐▒▒▒▒▒▄▀▒▒▒▀▀▀▒▒▒▒▄█▀░░▒▌▀▀▄▄</p>
-                        <p class="noVMargin textShadowAnim4">▒▒▒▒▒▒█▒▄▄▀▒▒▒▒▒▒▒▒▒▒▒░░▐▒▀▄▀▄░░░░▀</p>
-                        <p class="noVMargin textShadowAnim3">▒▒▒▒▒▒▒█▒▒▒▒▒▒▒▒▒▄▒▒▒▒▄▀▒▒▒▌░░▀▄</p>
-                        <p class="noVMargin textShadowAnim2">▒▒▒▒▒▒▒▒▀▄▒▒▒▒▒▒▒▒▀▀▀▀▒▒▒▄▀</p>
+                        <p class="noVMargin textShadowAnim " style="--delay: 0s">░░░░░░░░░░░░░░░░░░░░░▄▀░░▌</p>
+                        <p class="noVMargin textShadowAnim" style="--delay: 0.3s">░░░░░░░░░░░░░░░░░░░▄▀▐░░░▌</p>
+                        <p class="noVMargin textShadowAnim" style="--delay: 0.6s">░░░░░░░░░░░░░░░░▄▀▀▒▐▒░░░▌</p>
+                        <p class="noVMargin textShadowAnim" style="--delay: 0.9s">░░░░░▄▀▀▄░░░▄▄▀▀▒▒▒▒▌▒▒░░▌</p>
+                        <p class="noVMargin textShadowAnim" style="--delay: 1.2s">░░░░▐▒░░░▀▄▀▒▒▒▒▒▒▒▒▒▒▒▒▒█</p>
+                        <p class="noVMargin textShadowAnim" style="--delay: 1.5s">░░░░▌▒░░░░▒▀▄▒▒▒▒▒▒▒▒▒▒▒▒▒▀▄</p>
+                        <p class="noVMargin textShadowAnim" style="--delay: 1.8s">░░░░▐▒░░░░░▒▒▒▒▒▒▒▒▒▌▒▐▒▒▒▒▒▀▄</p>
+                        <p class="noVMargin textShadowAnim" style="--delay: 2.1s">░░░░▌▀▄░░▒▒▒▒▒▒▒▒▐▒▒▒▌▒▌▒▄▄▒▒▐</p>                        
+                        <p class="noVMargin textShadowAnim" style="--delay: 2.1s">░░░▌▌▒▒▀▒▒▒▒▒▒▒▒▒▒▐▒▒▒▒▒█▄█▌▒▒▌</p>
+                        <p class="noVMargin textShadowAnim" style="--delay: 1.8s">░▄▀▒▐▒▒▒▒▒▒▒▒▒▒▒▄▀█▌▒▒▒▒▒▀▀▒▒▐░░░▄</p>
+                        <p class="noVMargin textShadowAnim" style="--delay: 1.5s">▀▒▒▒▒▌▒▒▒▒▒▒▒▄▒▐███▌▄▒▒▒▒▒▒▒▄▀▀▀▀</p>
+                        <p class="noVMargin textShadowAnim" style="--delay: 1.2s">▒▒▒▒▒▐▒▒▒▒▒▄▀▒▒▒▀▀▀▒▒▒▒▄█▀░░▒▌▀▀▄▄</p>
+                        <p class="noVMargin textShadowAnim" style="--delay: 0.9s">▒▒▒▒▒▒█▒▄▄▀▒▒▒▒▒▒▒▒▒▒▒░░▐▒▀▄▀▄░░░░▀</p>
+                        <p class="noVMargin textShadowAnim" style="--delay: 0.6s">▒▒▒▒▒▒▒█▒▒▒▒▒▒▒▒▒▄▒▒▒▒▄▀▒▒▒▌░░▀▄</p>
+                        <p class="noVMargin textShadowAnim" style="--delay: 0.3s">▒▒▒▒▒▒▒▒▀▄▒▒▒▒▒▒▒▒▀▀▀▀▒▒▒▄▀</p>
                     </div>
                     <div class="catMargin">
-                        <h1>Cat insert(anim sync whole)</h1>
-                        <p class="noVMargin textShadowAnim ">░░░░░░░░░░░░░░░░░░░░░▄▀░░▌</p>
-                        <p class="noVMargin textShadowAnim2">░░░░░░░░░░░░░░░░░░░▄▀▐░░░▌</p>
-                        <p class="noVMargin textShadowAnim3">░░░░░░░░░░░░░░░░▄▀▀▒▐▒░░░▌</p>
-                        <p class="noVMargin textShadowAnim4">░░░░░▄▀▀▄░░░▄▄▀▀▒▒▒▒▌▒▒░░▌</p>
-                        <p class="noVMargin textShadowAnim5">░░░░▐▒░░░▀▄▀▒▒▒▒▒▒▒▒▒▒▒▒▒█</p>
-                        <p class="noVMargin textShadowAnim6">░░░░▌▒░░░░▒▀▄▒▒▒▒▒▒▒▒▒▒▒▒▒▀▄</p>
-                        <p class="noVMargin textShadowAnim7">░░░░▐▒░░░░░▒▒▒▒▒▒▒▒▒▌▒▐▒▒▒▒▒▀▄</p>
-                        <p class="noVMargin textShadowAnim8">░░░░▌▀▄░░▒▒▒▒▒▒▒▒▐▒▒▒▌▒▌▒▄▄▒▒▐</p>
-                        <p class="noVMargin textShadowAnim9">░░░▌▌▒▒▀▒▒▒▒▒▒▒▒▒▒▐▒▒▒▒▒█▄█▌▒▒▌</p>
-                        <p class="noVMargin textShadowAnim10">░▄▀▒▐▒▒▒▒▒▒▒▒▒▒▒▄▀█▌▒▒▒▒▒▀▀▒▒▐░░░▄</p>
-                        <p class="noVMargin textShadowAnim11">▀▒▒▒▒▌▒▒▒▒▒▒▒▄▒▐███▌▄▒▒▒▒▒▒▒▄▀▀▀▀</p>
-                        <p class="noVMargin textShadowAnim12">▒▒▒▒▒▐▒▒▒▒▒▄▀▒▒▒▀▀▀▒▒▒▒▄█▀░░▒▌▀▀▄▄</p>
-                        <p class="noVMargin textShadowAnim13">▒▒▒▒▒▒█▒▄▄▀▒▒▒▒▒▒▒▒▒▒▒░░▐▒▀▄▀▄░░░░▀</p>
-                        <p class="noVMargin textShadowAnim14">▒▒▒▒▒▒▒█▒▒▒▒▒▒▒▒▒▄▒▒▒▒▄▀▒▒▒▌░░▀▄</p>
-                        <p class="noVMargin textShadowAnim15">▒▒▒▒▒▒▒▒▀▄▒▒▒▒▒▒▒▒▀▀▀▀▒▒▒▄▀</p>
+                        <h1>Cat insert(vertical wave)</h1>
+                        <p class="noVMargin textShadowAnim" style="--delay: 0s">░░░░░░░░░░░░░░░░░░░░░▄▀░░▌</p>
+                        <p class="noVMargin textShadowAnim" style="--delay: 0.3s">░░░░░░░░░░░░░░░░░░░▄▀▐░░░▌</p>
+                        <p class="noVMargin textShadowAnim" style="--delay: 0.6s">░░░░░░░░░░░░░░░░▄▀▀▒▐▒░░░▌</p>
+                        <p class="noVMargin textShadowAnim" style="--delay: 0.9s">░░░░░▄▀▀▄░░░▄▄▀▀▒▒▒▒▌▒▒░░▌</p>
+                        <p class="noVMargin textShadowAnim" style="--delay: 1.2s">░░░░▐▒░░░▀▄▀▒▒▒▒▒▒▒▒▒▒▒▒▒█</p>
+                        <p class="noVMargin textShadowAnim" style="--delay: 1.5s">░░░░▌▒░░░░▒▀▄▒▒▒▒▒▒▒▒▒▒▒▒▒▀▄</p>
+                        <p class="noVMargin textShadowAnim" style="--delay: 1.8s">░░░░▐▒░░░░░▒▒▒▒▒▒▒▒▒▌▒▐▒▒▒▒▒▀▄</p>
+                        <p class="noVMargin textShadowAnim" style="--delay: 2.1s">░░░░▌▀▄░░▒▒▒▒▒▒▒▒▐▒▒▒▌▒▌▒▄▄▒▒▐</p>
+                        <p class="noVMargin textShadowAnim" style="--delay: 2.4s">░░░▌▌▒▒▀▒▒▒▒▒▒▒▒▒▒▐▒▒▒▒▒█▄█▌▒▒▌</p>
+                        <p class="noVMargin textShadowAnim" style="--delay: 2.7s">░▄▀▒▐▒▒▒▒▒▒▒▒▒▒▒▄▀█▌▒▒▒▒▒▀▀▒▒▐░░░▄</p>
+                        <p class="noVMargin textShadowAnim" style="--delay: 3s  ">▀▒▒▒▒▌▒▒▒▒▒▒▒▄▒▐███▌▄▒▒▒▒▒▒▒▄▀▀▀▀</p>
+                        <p class="noVMargin textShadowAnim" style="--delay: 3.3s">▒▒▒▒▒▐▒▒▒▒▒▄▀▒▒▒▀▀▀▒▒▒▒▄█▀░░▒▌▀▀▄▄</p>
+                        <p class="noVMargin textShadowAnim" style="--delay: 3.6s">▒▒▒▒▒▒█▒▄▄▀▒▒▒▒▒▒▒▒▒▒▒░░▐▒▀▄▀▄░░░░▀</p>
+                        <p class="noVMargin textShadowAnim" style="--delay: 3.9s">▒▒▒▒▒▒▒█▒▒▒▒▒▒▒▒▒▄▒▒▒▒▄▀▒▒▒▌░░▀▄</p>
+                        <p class="noVMargin textShadowAnim" style="--delay: 4.2s">▒▒▒▒▒▒▒▒▀▄▒▒▒▒▒▒▒▒▀▀▀▀▒▒▒▄▀</p>
                     </div>
+                    <!-- Horizontal wave -->
                     <div class="catMargin">
                         <!-- &nbsp; this creates a blank space (as in pressing space), this is mandatory since the p tag will delete spaces on this implementation -->
+                        <!-- Apparently you can pass variables to css and call them on classes, cool!-->
                         <h1>Cat insert(horizontal wave)</h1>
                         <button onclick="visible('tutorial');defineHeight()">?</button>
                         <h3 class="hidden buttonAlignLeft" id="tutorial">This implementation is a little bit more complicated, and im sure there is another (more practical) method to do this. Essentialy im re-using the textshadowanim, in the same manner i did with the individual letters, but since this ascii drawing is more complex, i broke up each vertical line on the original and put them on an horizontal 'p', then you need to force a word wrap so the p display from top to bottom instead of left to right (duh!), use a word wrap and force the width to 1 char lenght(like 4px).</p></h3>
                         <div class="flex">
-                            <p class="noVMargin textShadowAnim displayTextV">░░░░░░░░░░▀▒▒▒▒</p>
-                            <p class="noVMargin textShadowAnim2 displayTextV">░░░░░░░░░▄▒▒▒▒▒</p>
-                            <p class="noVMargin textShadowAnim3 displayTextV">░░░░░░░░░▀▒▒▒▒▒</p>
-                            <p class="noVMargin textShadowAnim4 displayTextV">░░░░░░░░▌▒▒▒▒▒▒</p>
-                            <p class="noVMargin textShadowAnim5 displayTextV">░░░░▐▌▐▌▌▐▒▒▒▒▒</p>
-                            <p class="noVMargin textShadowAnim6 displayTextV">░░░▄▒▒▒▀▒▒▌▐▒▒▒</p>
-                            <p class="noVMargin textShadowAnim7 displayTextV">░░░▀░░░▄▒▒▒▒█▒▒</p>
-                            <p class="noVMargin textShadowAnim8 displayTextV">░░░▀░░░░▀▒▒▒▒█▒</p>
-                            <p class="noVMargin textShadowAnim9 displayTextV">░░░▄░░░░▒▒▒▒▄▒▀</p>
-                            <p class="noVMargin textShadowAnim10 displayTextV">░░░░▀░░▒▒▒▒▒▄▒▄</p>
-                            <p class="noVMargin textShadowAnim11 displayTextV">░░░░▄▒░▒▒▒▒▒▀▒▒</p>
-                            <p class="noVMargin textShadowAnim12 displayTextV">░░░░▀▀▒▒▒▒▒▄▒▒▒</p>
-                            <p class="noVMargin textShadowAnim13 displayTextV">░░░▄▒▄▒▒▒▒▒▀▒▒▒</p>
-                            <p class="noVMargin textShadowAnim14 displayTextV">░░░▄▒▒▒▒▒▒▄▒▒▒▒</p>
-                            <p class="noVMargin textShadowAnim15 displayTextV">░░░▀▒▒▒▒▒▒▒▒▒▒▒</p>
-                            <p class="noVMargin textShadowAnim displayTextV">░░░▀▒▒▒▒▒▒▐▒▒▒▒</p>
-                            <p class="noVMargin textShadowAnim displayTextV">░░▄▒▒▒▒▒▒▄█▀▒▒▒</p>
-                            <p class="noVMargin textShadowAnim displayTextV">░░▀▒▒▒▒▐▒▀█▀▒▄▒</p>
-                            <p class="noVMargin textShadowAnim displayTextV">░░▀▒▒▒▒▒▐██▀▒▒▀</p>
-                            <p class="noVMargin textShadowAnim displayTextV">░▄▒▒▒▒▒▒▒▌▌▒▒▒▀</p>
-                            <p class="noVMargin textShadowAnim displayTextV">░▀▐▌▒▒▌▒▒▒▄▒▒▒▀</p>
-                            <p class="noVMargin textShadowAnim displayTextV">▄▐▒▒▒▒▒▌▒▒▒▒▒▒▀</p>
-                            <p class="noVMargin textShadowAnim displayTextV">▀░░▒▒▒▐▒▒▒▒▒░▄▒</p>
-                            <p class="noVMargin textShadowAnim displayTextV">░░░░▒▒▒▌▒▒▒▄░▀▒</p>
-                            <p class="noVMargin textShadowAnim displayTextV">░░░░▒▒▒▒█▒▒█▐▒▒</p>
-                            <p class="noVMargin textShadowAnim displayTextV">▌▌▌▌█▒▒▄▄▀▒▀▒▒▄</p>
-                            <p class="noVMargin textShadowAnim displayTextV">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▀▒▄█▀▒░▀▒▀</p>
+                            <p class="noVMargin textShadowAnim displayTextV" style="--delay: 0s">░░░░░░░░░░▀▒▒▒▒</p>
+                            <p class="noVMargin textShadowAnim displayTextV" style="--delay: 0.3s">░░░░░░░░░▄▒▒▒▒▒</p>
+                            <p class="noVMargin textShadowAnim displayTextV" style="--delay: 0.6s">░░░░░░░░░▀▒▒▒▒▒</p>
+                            <p class="noVMargin textShadowAnim displayTextV" style="--delay: 0.9s">░░░░░░░░▌▒▒▒▒▒▒</p>
+                            <p class="noVMargin textShadowAnim displayTextV" style="--delay: 1.2s">░░░░▐▌▐▌▌▐▒▒▒▒▒</p>
+                            <p class="noVMargin textShadowAnim displayTextV"style="--delay: 1.5s">░░░▄▒▒▒▀▒▒▌▐▒▒▒</p>
+                            <p class="noVMargin textShadowAnim displayTextV" style="--delay: 1.8s">░░░▀░░░▄▒▒▒▒█▒▒</p>
+                            <p class="noVMargin textShadowAnim displayTextV" style="--delay: 2.1s">░░░▀░░░░▀▒▒▒▒█▒</p>
+                            <p class="noVMargin textShadowAnim displayTextV" style="--delay: 2.4s">░░░▄░░░░▒▒▒▒▄▒▀</p>
+                            <p class="noVMargin textShadowAnim displayTextV" style="--delay: 2.7s">░░░░▀░░▒▒▒▒▒▄▒▄</p>
+                            <p class="noVMargin textShadowAnim displayTextV" style="--delay: 3s">░░░░▄▒░▒▒▒▒▒▀▒▒</p>
+                            <p class="noVMargin textShadowAnim displayTextV" style="--delay: 3.3s">░░░░▀▀▒▒▒▒▒▄▒▒▒</p>
+                            <p class="noVMargin textShadowAnim displayTextV" style="--delay: 3.6s">░░░▄▒▄▒▒▒▒▒▀▒▒▒</p>
+                            <p class="noVMargin textShadowAnim displayTextV" style="--delay: 3.9s">░░░▄▒▒▒▒▒▒▄▒▒▒▒</p>
+                            <p class="noVMargin textShadowAnim displayTextV" style="--delay: 4.2s">░░░▀▒▒▒▒▒▒▒▒▒▒▒</p>
+                            <p class="noVMargin textShadowAnim displayTextV" style="--delay: 4.5s">░░░▀▒▒▒▒▒▒▐▒▒▒▒</p>
+                            <p class="noVMargin textShadowAnim displayTextV" style="--delay: 4.8s">░░▄▒▒▒▒▒▒▄█▀▒▒▒</p>
+                            <p class="noVMargin textShadowAnim displayTextV" style="--delay: 5.1s">░░▀▒▒▒▒▐▒▀█▀▒▄▒</p>
+                            <p class="noVMargin textShadowAnim displayTextV" style="--delay: 5.4s">░░▀▒▒▒▒▒▐██▀▒▒▀</p>
+                            <p class="noVMargin textShadowAnim displayTextV" style="--delay: 5.7s">░▄▒▒▒▒▒▒▒▌▌▒▒▒▀</p>
+                            <p class="noVMargin textShadowAnim displayTextV" style="--delay: 6s">░▀▐▌▒▒▌▒▒▒▄▒▒▒▀</p>
+                            <p class="noVMargin textShadowAnim displayTextV" style="--delay: 6.3s">▄▐▒▒▒▒▒▌▒▒▒▒▒▒▀</p>
+                            <p class="noVMargin textShadowAnim displayTextV" style="--delay: 6.6s">▀░░▒▒▒▐▒▒▒▒▒░▄▒</p>
+                            <p class="noVMargin textShadowAnim displayTextV" style="--delay: 6.9s">░░░░▒▒▒▌▒▒▒▄░▀▒</p>
+                            <p class="noVMargin textShadowAnim displayTextV" style="--delay: 7.2s">░░░░▒▒▒▒█▒▒█▐▒▒</p>
+                            <p class="noVMargin textShadowAnim displayTextV" style="--delay: 7.5s">▌▌▌▌█▒▒▄▄▀▒▀▒▒▄</p>
+                            <p class="noVMargin textShadowAnim displayTextV" style="--delay: 7.8s">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▀▒▄█▀▒░▀▒▀</p>
                             <p class="noVMargin textShadowAnim displayTextV"></p>
                             <p class="noVMargin textShadowAnim displayTextV"></p>
                             <p class="noVMargin textShadowAnim displayTextV"></p>

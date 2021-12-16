@@ -11,64 +11,7 @@
     margin-left: 48%;
 }
 .textShadowAnim{
-    animation: 4s ease-in-out infinite;
-    animation-name: textShadowAndColor;
-}
-.textShadowAnim2{
-    animation: 4s ease-in-out infinite;
-    animation-delay: 0.3s;
-    animation-name: textShadowAndColor;
-}
-.textShadowAnim3{
-    animation: 4s ease-in-out 0.6s infinite;    
-    animation-name: textShadowAndColor;
-}
-.textShadowAnim4{
-    animation: 4s ease-in-out 0.9s infinite;    
-    animation-name: textShadowAndColor;
-}
-.textShadowAnim5{
-    animation: 4s ease-in-out 1.2s infinite;    
-    animation-name: textShadowAndColor;
-}
-.textShadowAnim6{
-    animation: 4s ease-in-out 1.5s infinite;    
-    animation-name: textShadowAndColor;
-}
-.textShadowAnim7{
-    animation: 4s ease-in-out 1.8s infinite;    
-    animation-name: textShadowAndColor;
-}
-.textShadowAnim8{
-    animation: 4s ease-in-out 2.1s infinite;    
-    animation-name: textShadowAndColor;
-}
-.textShadowAnim9{
-    animation: 4s ease-in-out 2.4s infinite;    
-    animation-name: textShadowAndColor;
-}
-.textShadowAnim10{
-    animation: 4s ease-in-out 2.7s infinite;    
-    animation-name: textShadowAndColor;
-}
-.textShadowAnim11{
-    animation: 4s ease-in-out 3.0s infinite;    
-    animation-name: textShadowAndColor;
-}
-.textShadowAnim12{
-    animation: 4s ease-in-out 3.3s infinite;    
-    animation-name: textShadowAndColor;
-}
-.textShadowAnim13{
-    animation: 4s ease-in-out 3.6s infinite;    
-    animation-name: textShadowAndColor;
-}
-.textShadowAnim14{
-    animation: 4s ease-in-out 3.9s infinite;    
-    animation-name: textShadowAndColor;
-}
-.textShadowAnim15{
-    animation: 4s ease-in-out 4.2s infinite;    
+    animation: 4s ease-in-out var(--delay) infinite;
     animation-name: textShadowAndColor;
 }
 
@@ -352,6 +295,9 @@
     width: 300px;
     white-space: nowrap;
 }
+.marquee{
+    animation: marqueeR 20s steps(350, end) infinite;    
+}
 .marqueeS{
     animation: 15s linear infinite;
     animation-name: marqueeR;
@@ -475,10 +421,10 @@
 
 .dogGif{
     size: 50%;
-    background-image: url(dogwalk.gif);
+    background-image: url(../images/dogwalk.gif);
 }
 .maeImg{
-    background-image: url(mae.jpg);
+    background-image: url(../images/mae.jpg);
 }
 
 .bgWhite{
