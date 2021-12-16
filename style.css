@@ -304,8 +304,14 @@
 
 .loadingBarEmpty{
     background-color: grey;
-    height: 5px;
-    width: 50px;
+    height: 10px;
+    width: 500px;
+    
+}
+.loadingBar{    
+    height: 10px;
+    width: 0px;
+    animation: loadingBar 6s ease-in-out forwards;
 }
 
 .textBlinkW{
@@ -334,8 +340,8 @@
     animation-name: catBlinkTop;
 }
 
-.testpush{
-    color: red;
+.loadingBarGreen{
+    background-color: rgb(123, 255, 71);
 }
 .marqueeContainer{
     margin-left: 36%;
@@ -369,7 +375,6 @@
 
 .absolutePos{
     position: absolute;
-    top: 0;
 }
 .catRelativePos{
     position: relative;
@@ -519,7 +524,14 @@
     text-align: justify;
 }
 
-
+@keyframes loadingBar{
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 500px;
+    }
+}
 @keyframes marqueeR{
     0%{
         transform: translatex(100%);
