@@ -107,9 +107,19 @@
                     <h1 class="textCenter">Cats and Ascii</h1>
                     <a href="https://github.com/NicolasCrapanzano/Trucos-CSS">Check the git repo</a>
                 </div>
-                <button onclick="sectionSwap('section2','section1');defineHeight()">Text Visual Effects</button>
-                <button disabled>Current Section</button>
-                <button onclick="sectionSwap('section2','section3');defineHeight()">Text Masking</button>
+                <div class="grid col3">
+                    <div class="buttonAlignLeft">
+                        <a href="credits.html"><button>Credits</button></a>
+                    </div>
+                    <div>
+                        <button onclick="sectionSwap('section2','section1');defineHeight()">Text Visual Effects</button>
+                        <button disabled>Current Section</button>
+                        <button onclick="sectionSwap('section2','section3');defineHeight()">Text Masking</button>
+                    </div>
+                    <div class="buttonAlignRight">
+                        <a href="bgmenu.html"><button >Menu</button></a>
+                    </div>
+                </div>
                 <div class="textLeft">
                     <!-- Cats! -->
                     <div class="catMargin">
@@ -282,22 +292,25 @@
                         <p class="noVMargin textUncover15">▒▒▒▒▒▒▒▒▀▄▒▒▒▒▒▒▒▒▀▀▀▀▒▒▒▄▀</p>
                     </div>
                     <div class="catMargin">
-                        <h1>Cat insert(uncover)</h1><i>if cat is already visible reload page</i>
-                        <p class="noVMargin textwrite">░░░░░░░░░░░░░░░░░░░░░▄▀░░▌</p>
-                        <p class="noVMargin textwrite2">░░░░░░░░░░░░░░░░░░░▄▀▐░░░▌</p>
-                        <p class="noVMargin textwrite3">░░░░░░░░░░░░░░░░▄▀▀▒▐▒░░░▌</p>
-                        <p class="noVMargin textwrite4">░░░░░▄▀▀▄░░░▄▄▀▀▒▒▒▒▌▒▒░░▌</p>
-                        <p class="noVMargin textwrite5">░░░░▐▒░░░▀▄▀▒▒▒▒▒▒▒▒▒▒▒▒▒█</p>
-                        <p class="noVMargin textwrite6">░░░░▌▒░░░░▒▀▄▒▒▒▒▒▒▒▒▒▒▒▒▒▀▄</p>
-                        <p class="noVMargin textwrite7">░░░░▐▒░░░░░▒▒▒▒▒▒▒▒▒▌▒▐▒▒▒▒▒▀▄</p>
-                        <p class="noVMargin textwrite8">░░░░▌▀▄░░▒▒▒▒▒▒▒▒▐▒▒▒▌▒▌▒▄▄▒▒▐</p>
-                        <p class="noVMargin textwrite9">░░░▌▌▒▒▀▒▒▒▒▒▒▒▒▒▒▐▒▒▒▒▒█▄█▌▒▒▌</p>
-                        <p class="noVMargin textwrite10">░▄▀▒▐▒▒▒▒▒▒▒▒▒▒▒▄▀█▌▒▒▒▒▒▀▀▒▒▐░░░▄</p>
-                        <p class="noVMargin textwrite11">▀▒▒▒▒▌▒▒▒▒▒▒▒▄▒▐███▌▄▒▒▒▒▒▒▒▄▀▀▀▀</p>
-                        <p class="noVMargin textwrite12">▒▒▒▒▒▐▒▒▒▒▒▄▀▒▒▒▀▀▀▒▒▒▒▄█▀░░▒▌▀▀▄▄</p>
-                        <p class="noVMargin textwrite13">▒▒▒▒▒▒█▒▄▄▀▒▒▒▒▒▒▒▒▒▒▒░░▐▒▀▄▀▄░░░░▀</p>
-                        <p class="noVMargin textwrite14">▒▒▒▒▒▒▒█▒▒▒▒▒▒▒▒▒▄▒▒▒▒▄▀▒▒▒▌░░▀▄</p>
-                        <p class="noVMargin textwrite15">▒▒▒▒▒▒▒▒▀▄▒▒▒▒▒▒▒▒▀▀▀▀▒▒▒▄▀</p>
+                        <h1>Cat insert(uncover)</h1>
+                        <button onclick="resetAnim('catUncover')">Restart</button>
+                        <div id="catUncover">
+                            <p class="noVMargin textwrite">░░░░░░░░░░░░░░░░░░░░░▄▀░░▌</p>
+                            <p class="noVMargin textwrite2">░░░░░░░░░░░░░░░░░░░▄▀▐░░░▌</p>
+                            <p class="noVMargin textwrite3">░░░░░░░░░░░░░░░░▄▀▀▒▐▒░░░▌</p>
+                            <p class="noVMargin textwrite4">░░░░░▄▀▀▄░░░▄▄▀▀▒▒▒▒▌▒▒░░▌</p>
+                            <p class="noVMargin textwrite5">░░░░▐▒░░░▀▄▀▒▒▒▒▒▒▒▒▒▒▒▒▒█</p>
+                            <p class="noVMargin textwrite6">░░░░▌▒░░░░▒▀▄▒▒▒▒▒▒▒▒▒▒▒▒▒▀▄</p>
+                            <p class="noVMargin textwrite7">░░░░▐▒░░░░░▒▒▒▒▒▒▒▒▒▌▒▐▒▒▒▒▒▀▄</p>
+                            <p class="noVMargin textwrite8">░░░░▌▀▄░░▒▒▒▒▒▒▒▒▐▒▒▒▌▒▌▒▄▄▒▒▐</p>
+                            <p class="noVMargin textwrite9">░░░▌▌▒▒▀▒▒▒▒▒▒▒▒▒▒▐▒▒▒▒▒█▄█▌▒▒▌</p>
+                            <p class="noVMargin textwrite10">░▄▀▒▐▒▒▒▒▒▒▒▒▒▒▒▄▀█▌▒▒▒▒▒▀▀▒▒▐░░░▄</p>
+                            <p class="noVMargin textwrite11">▀▒▒▒▒▌▒▒▒▒▒▒▒▄▒▐███▌▄▒▒▒▒▒▒▒▄▀▀▀▀</p>
+                            <p class="noVMargin textwrite12">▒▒▒▒▒▐▒▒▒▒▒▄▀▒▒▒▀▀▀▒▒▒▒▄█▀░░▒▌▀▀▄▄</p>
+                            <p class="noVMargin textwrite13">▒▒▒▒▒▒█▒▄▄▀▒▒▒▒▒▒▒▒▒▒▒░░▐▒▀▄▀▄░░░░▀</p>
+                            <p class="noVMargin textwrite14">▒▒▒▒▒▒▒█▒▒▒▒▒▒▒▒▒▄▒▒▒▒▄▀▒▒▒▌░░▀▄</p>
+                            <p class="noVMargin textwrite15">▒▒▒▒▒▒▒▒▀▄▒▒▒▒▒▒▒▒▀▀▀▀▒▒▒▄▀</p>
+                        </div>
                     </div>
                     <!-- For this to work without getting overlaped with other divs, you must set a manual padding equal to the size of the absolute content-->
                     <div class="catRelativePos">
@@ -366,9 +379,20 @@
                     <h1 class="textCenter">Text Masking</h1>
                     <a href="https://github.com/NicolasCrapanzano/Trucos-CSS">Check the git repo</a>
                 </div>
-                <button onclick="sectionSwap('section3','section1');defineHeight()">Text Visual Effects</button>
-                <button onclick="sectionSwap('section3','section2');defineHeight()">Cats and Ascii</button>
-                <button disabled>Current Section</button>
+                <div class="grid col3">
+                    <div class="buttonAlignLeft">
+                        <a href="credits.html"><button>Credits</button></a>
+                    </div>
+                    <div>
+                        <button onclick="sectionSwap('section3','section1');defineHeight()">Text Visual Effects</button>
+                        <button onclick="sectionSwap('section3','section2');defineHeight()">Cats and Ascii</button>
+                        <button disabled>Current Section</button>
+                    </div>
+                    <div class="buttonAlignRight">
+                        <a href="bgmenu.html"><button >Menu</button></a>
+                    </div>
+                </div>
+
                 <div>
                 <!-- source : https://codepen.io/tomlutzenberger/pen/GjNawX -->
                     <div>
@@ -404,8 +428,10 @@
                             </div>
                         </div>
                         <div>
-                            <h1 class="textCenter">Loading bar</h1>
-                            <div class="flex" style="margin-left: 42%;">
+                            <!-- This animation cant be paused or played like others, since its not just 1 animation but 15 !!-->
+                            <h1 class="textCenter">Loading bar</h1>                                                        
+                            <button onclick="resetAnim('asciiLoadingBar')">Restart</button>
+                            <div id="asciiLoadingBar" class="flex" style="margin-left: 42%;">
                                 <span class="asciiLoad lettersSpan">▀</span>
                                 <span class="asciiLoad2 lettersSpan">▀</span>
                                 <span class="asciiLoad3 lettersSpan">▀</span>
@@ -440,12 +466,15 @@
                         </div>
                         <div class="catRelativePos">
                             <h1> Loading bar smooth</h1>
+                            <button onclick="playAnim('loadingBar')">►</button>
+                            <button onclick="resetAnim('loadingBar')">Restart</button>
+                            <button onclick="pauseAnim('loadingBar')">■</button>
                             <div class="flex" style="margin-left: 28%;">
                                 <div class="absolutePos index1">                                    
                                     <div class="loadingBarEmpty"></div>
                                 </div>
-                                <div class="absolutePos index2">
-                                    <div class="absolutePos loadingBar loadingBarGreen"></div>
+                                <div class="absolutePos index2" >
+                                    <div class="absolutePos loadingBar loadingBarGreen" id="loadingBar"></div>
                                 </div>
                             </div>
                         </div>
@@ -462,9 +491,10 @@
     </div>
 
     <script>
-
+        //this has to be defined so the first time the page loads it defines the height of the content, in this case for setting the bg color
         document.onload = defineHeight();
 
+        //call this when changing sections too!
         function defineHeight(){
             let mainDiv = document.getElementById("mainContainer");
             let bgIndex1 = document.getElementsByClassName("bgIndex1");
@@ -475,6 +505,7 @@
             }
         }
 
+        //pass the current active section and the one you want to activate as params
         function sectionSwap(current,next){
             let sections = ["section1","section2","section3"];
             let Celement = document.getElementById(current);
@@ -484,6 +515,31 @@
             Nelement.classList.remove("hidden");
         }
 
+        function pauseAnim(animation){
+            let anim = document.getElementById(animation);
+            anim.style.webkitAnimationPlayState = "paused";            
+        }
+
+        function playAnim(animation){
+            let anim = document.getElementById(animation);            
+            anim.style.webkitAnimationPlayState = "running";
+        }
+        //WTF is this function?
+        //what we are doing here is, pass an id as a parameter
+        //find it on the DOM
+        //changing the display no nothing, so it dissapears
+        //wait 500 miliseconds, and upon re appearing it wil re-start the animation
+        //for some reason css doesnt have an inbuilt way of reseting animations :/
+        function resetAnim(animation){
+            let anim = document.getElementById(animation);
+            let prevDisplay = anim.style.display; //save the display to prevent breaking the css structure
+
+            anim.style.display = "none";
+
+            setTimeout(function(){
+                anim.style.display = prevDisplay;
+            }, 500)
+        }
     </script>
 </body>
 </html>
