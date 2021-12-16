@@ -226,7 +226,87 @@
     animation-name: textUncover;
 }
 
+.asciiLoad{
+    color: gray;
+    animation: 1s ease-in-out 0.5s forwards;
+    animation-name: asciiLoad;
+}
+.asciiLoad2{
+    color: gray;
+    animation: 1s ease-in-out 1s forwards;
+    animation-name: asciiLoad;
+}
+.asciiLoad3{
+    color: gray;
+    animation: 1s ease-in-out 1.5s forwards;
+    animation-name: asciiLoad;
+}
+.asciiLoad4{
+    color: gray;
+    animation: 1s ease-in-out 2s forwards;
+    animation-name: asciiLoad;
+}
+.asciiLoad5{
+    color: gray;
+    animation: 1s ease-in-out 2.5s forwards;
+    animation-name: asciiLoad;
+}
+.asciiLoad6{
+    color: gray;
+    animation: 1s ease-in-out 3s forwards;
+    animation-name: asciiLoad;
+}
+.asciiLoad7{
+    color: gray;
+    animation: 1s ease-in-out 3.5s forwards;
+    animation-name: asciiLoad;
+}
+.asciiLoad8{
+    color: gray;
+    animation: 1s ease-in-out 4s forwards;
+    animation-name: asciiLoad;
+}
+.asciiLoad9{
+    color: gray;
+    animation: 1s ease-in-out 4.5s forwards;
+    animation-name: asciiLoad;
+}
+.asciiLoad10{
+    color: gray;
+    animation: 1s ease-in-out 5s forwards;
+    animation-name: asciiLoad;
+}
+.asciiLoad11{
+    color: gray;
+    animation: 1s ease-in-out 5.5s forwards;
+    animation-name: asciiLoad;
+}
+.asciiLoad12{
+    color: gray;
+    animation: 1s ease-in-out 6s forwards;
+    animation-name: asciiLoad;
+}
+.asciiLoad13{
+    color: gray;
+    animation: 1s ease-in-out 6.5s forwards;
+    animation-name: asciiLoad;
+}
+.asciiLoad14{
+    color: gray;
+    animation: 1s ease-in-out 7s forwards;
+    animation-name: asciiLoad;
+}
+.asciiLoad15{
+    color: gray;
+    animation: 1s ease-in-out 7.5s forwards;
+    animation-name: asciiLoad;
+}
 
+.loadingBarEmpty{
+    background-color: grey;
+    height: 5px;
+    width: 50px;
+}
 
 .textBlinkW{
     color: black;
@@ -333,6 +413,9 @@
 .catMargin{
     margin-left: 38%;
 }
+.catMargin button{
+    margin-left: 25%;
+}
 
 
 .block{
@@ -351,6 +434,7 @@
 #tutorial{
     word-wrap: break-word;
     width: 1000px;
+    margin-left: -50%;
 }
 .padding70{
     padding-top: 70px;
@@ -370,6 +454,12 @@
 }
 .textBlack{
     color: black;
+}
+.textGreen{
+    color: green;
+}
+.textBrown{
+    color: brown;
 }
 .displayTextV{
     overflow-wrap: break-word;
@@ -486,6 +576,14 @@
     }
     100%{
         color: black;
+    }
+}
+@keyframes asciiLoad{
+    50% {
+        color: gray;
+    }
+    100%{
+        color: green;
     }
 }
 @keyframes textColAnim{
