@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/bgstyles.css">
+    <script src="../js/utilities.js"></script>
+    <title>Minecraft Loading screen</title>
+</head>
+<body class="MCbody">
+    <div>
+        <div class="MCUI">
+            <div class="MCtext">
+                <p class="MCTitle">Generating level</p>
+                <p class="MCSubTitle" id="subTitle">Raising..</p>
+                <div class="loadContainerMC">
+                    <div class="flex" style="">
+                        <div class="absolutePos index1">                                    
+                            <div class="loadingBarEmpty" style="--height: 5px;--width: 250px;"></div>
+                        </div>
+                        <div class="absolutePos index2" >
+                            <div class="absolutePos loadingBarMC loadingBarGreen" id="loadingBar" style="--height: 5px;--width: 0px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="minecraftBG">
+        </div>
+        <div class="darkOverlay">
+        </div>
+
+    </div>
+</body>
+</html>
+
+<script>
+    let loadBar = document.getElementById("loadingBar");
+    let subTitle = document.getElementById("subTitle");
+    let count = 1;
+    let strings = [ "Raising.." , "Eroding.." , "Soiling.." , "Carving.." , "Growing.." , "Planting.." ]
+    loadBar.addEventListener('animationend', () =>{
+        if (count < 6){
+        console.log(strings[count]);
+        console.log(count);
+        subTitle.innerHTML = strings[count];
+        count++;
+        resetAnim("loadingBar");
+        }else{
+            window.location.href = "../index.html";
+        }
+    });
+    
+</script>
+<!-- Raising.. / Eroding.. / Soiling.. / Carving.. / Growing.. / Planting.. -->

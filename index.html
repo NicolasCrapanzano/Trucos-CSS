@@ -7,25 +7,26 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/bgstyles.css">
     <script src="js/utilities.js"></script>
-    <title>animated bg</title>
+    <title>Cool CSS</title>
 </head>
 <body>
     <div>
         <!-- left and right background -->
         <div class="grid col2">
-            <div class="left bgIndex1 index1"></div>
-            <div class="right bgIndex1 index1"></div>
+            <div class="VanillaBgL bgIndex1 index1" id="left"></div>
+            <div class="VanillaBgR bgIndex1 index1" id="right"></div>
         </div>
         <!-- Main section -->
         <div class="mainContainer borderStyle1 textCenter absolute index5" id="mainContainer">
-            <div class="content" id="section1">
+            <!-- Section -->
+            <div class="menu" id="section1">
                 <div>
                     <h1 class="">Text Visual Effects</h1>
-                    <a href="https://github.com/NicolasCrapanzano/Trucos-CSS">Check the git repo</a>
+                    <a href="https://github.com/NicolasCrapanzano/Trucos-CSS" target="_blank">Check the git repo</a>
                 </div>
                 <div class="grid col3">
                     <div class="buttonAlignLeft">
-                        <a href="credits.html"><button>Credits</button></a>
+                        <a href="./pages/credits.html"><button>Credits</button></a>
                     </div>
                     <div>
                         <button disabled>Current Section</button>
@@ -33,10 +34,10 @@
                         <button onclick="sectionSwap('section1','section3');defineHeight()">Text Masking</button>
                     </div>
                     <div class="buttonAlignRight">
-                        <a href="bgmenu.html"><button >Menu</button></a>
+                        <a href="./pages/bgmenu.html"><button >Menu</button></a>
                     </div>
                 </div>
-                <div>
+                <div class="content">
                     <div>
                         <h1>individual mods</h1>
                         <h3>shadow</h3>
@@ -94,28 +95,28 @@
                         <h1>marquee</h1>
                         <h3> Smooth marquee</h3>
                         <div class="marqueeContainer">
-                            <p class="marqueeS">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, pariatur natus harum porro sunt optio iste facere maiores laborum tenetur ex doloribus perspiciatis possimus enim facilis accusamus repellendus nulla quia!</p>
+                            <p class="marquee" style="--delay: 15s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, pariatur natus harum porro sunt optio iste facere maiores laborum tenetur ex doloribus perspiciatis possimus enim facilis accusamus repellendus nulla quia!</p>
                         </div>
                         <h3> Fast marquee</h3>
                         <div class="marqueeContainer">
-                            <p class="marqueeF">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, pariatur natus harum porro sunt optio iste facere maiores laborum tenetur ex doloribus perspiciatis possimus enim facilis accusamus repellendus nulla quia!</p>
+                            <p class="marquee" style="--delay: 4s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, pariatur natus harum porro sunt optio iste facere maiores laborum tenetur ex doloribus perspiciatis possimus enim facilis accusamus repellendus nulla quia!</p>
                         </div>
                         <h3>like the original < marquee > tag</h3>
                         <div class="marqueeContainer">
-                            <p class="marquee">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, pariatur natus harum porro sunt optio iste facere maiores laborum tenetur ex doloribus perspiciatis possimus enim facilis accusamus repellendus nulla quia!</p>
+                            <p class="marqueeSteps">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, pariatur natus harum porro sunt optio iste facere maiores laborum tenetur ex doloribus perspiciatis possimus enim facilis accusamus repellendus nulla quia!</p>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="content hidden" id="section2">
+            <!-- Section -->
+            <div class="menu hidden" id="section2">
                 <div>
                     <h1 class="textCenter">Cats and Ascii</h1>
-                    <a href="https://github.com/NicolasCrapanzano/Trucos-CSS">Check the git repo</a>
+                    <a href="https://github.com/NicolasCrapanzano/Trucos-CSS" target="_blank">Check the git repo</a>
                 </div>
                 <div class="grid col3">
                     <div class="buttonAlignLeft">
-                        <a href="credits.html"><button>Credits</button></a>
+                        <a href="./pages/credits.html"><button>Credits</button></a>
                     </div>
                     <div>
                         <button onclick="sectionSwap('section2','section1');defineHeight()">Text Visual Effects</button>
@@ -123,10 +124,10 @@
                         <button onclick="sectionSwap('section2','section3');defineHeight()">Text Masking</button>
                     </div>
                     <div class="buttonAlignRight">
-                        <a href="bgmenu.html"><button >Menu</button></a>
+                        <a href="./pages/bgmenu.html"><button >Menu</button></a>
                     </div>
                 </div>
-                <div class="textLeft">
+                <div class="content textLeft">
                     <!-- Cats! -->
                     <div class="catMargin">
                         <h1 >Cat insert(Vanilla)</h1>
@@ -283,41 +284,41 @@
                     </div>
                     <div class="catMargin">
                         <h1>Cat insert(half blink sync)</h1>
-                        <p class="noVMargin textUncover">░░░░░░░░░░░░░░░░░░░░░▄▀░░▌</p>
-                        <p class="noVMargin textUncover2">░░░░░░░░░░░░░░░░░░░▄▀▐░░░▌</p>
-                        <p class="noVMargin textUncover3">░░░░░░░░░░░░░░░░▄▀▀▒▐▒░░░▌</p>
-                        <p class="noVMargin textUncover4">░░░░░▄▀▀▄░░░▄▄▀▀▒▒▒▒▌▒▒░░▌</p>
-                        <p class="noVMargin textUncover5">░░░░▐▒░░░▀▄▀▒▒▒▒▒▒▒▒▒▒▒▒▒█</p>
-                        <p class="noVMargin textUncover6">░░░░▌▒░░░░▒▀▄▒▒▒▒▒▒▒▒▒▒▒▒▒▀▄</p>
-                        <p class="noVMargin textUncover7">░░░░▐▒░░░░░▒▒▒▒▒▒▒▒▒▌▒▐▒▒▒▒▒▀▄</p>
-                        <p class="noVMargin textUncover8">░░░░▌▀▄░░▒▒▒▒▒▒▒▒▐▒▒▒▌▒▌▒▄▄▒▒▐</p>
-                        <p class="noVMargin textUncover9">░░░▌▌▒▒▀▒▒▒▒▒▒▒▒▒▒▐▒▒▒▒▒█▄█▌▒▒▌</p>
-                        <p class="noVMargin textUncover10">░▄▀▒▐▒▒▒▒▒▒▒▒▒▒▒▄▀█▌▒▒▒▒▒▀▀▒▒▐░░░▄</p>
-                        <p class="noVMargin textUncover11">▀▒▒▒▒▌▒▒▒▒▒▒▒▄▒▐███▌▄▒▒▒▒▒▒▒▄▀▀▀▀</p>
-                        <p class="noVMargin textUncover12">▒▒▒▒▒▐▒▒▒▒▒▄▀▒▒▒▀▀▀▒▒▒▒▄█▀░░▒▌▀▀▄▄</p>
-                        <p class="noVMargin textUncover13">▒▒▒▒▒▒█▒▄▄▀▒▒▒▒▒▒▒▒▒▒▒░░▐▒▀▄▀▄░░░░▀</p>
-                        <p class="noVMargin textUncover14">▒▒▒▒▒▒▒█▒▒▒▒▒▒▒▒▒▄▒▒▒▒▄▀▒▒▒▌░░▀▄</p>
-                        <p class="noVMargin textUncover15">▒▒▒▒▒▒▒▒▀▄▒▒▒▒▒▒▒▒▀▀▀▀▒▒▒▄▀</p>
+                        <p class="noVMargin textUncover" style="--delay: 0.5s">░░░░░░░░░░░░░░░░░░░░░▄▀░░▌</p>
+                        <p class="noVMargin textUncover" style="--delay: 1s">░░░░░░░░░░░░░░░░░░░▄▀▐░░░▌</p>
+                        <p class="noVMargin textUncover" style="--delay: 1.5s">░░░░░░░░░░░░░░░░▄▀▀▒▐▒░░░▌</p>
+                        <p class="noVMargin textUncover" style="--delay: 2s">░░░░░▄▀▀▄░░░▄▄▀▀▒▒▒▒▌▒▒░░▌</p>
+                        <p class="noVMargin textUncover" style="--delay: 2.5s">░░░░▐▒░░░▀▄▀▒▒▒▒▒▒▒▒▒▒▒▒▒█</p>
+                        <p class="noVMargin textUncover" style="--delay: 3s">░░░░▌▒░░░░▒▀▄▒▒▒▒▒▒▒▒▒▒▒▒▒▀▄</p>
+                        <p class="noVMargin textUncover" style="--delay: 3.5s">░░░░▐▒░░░░░▒▒▒▒▒▒▒▒▒▌▒▐▒▒▒▒▒▀▄</p>
+                        <p class="noVMargin textUncover" style="--delay: 4s">░░░░▌▀▄░░▒▒▒▒▒▒▒▒▐▒▒▒▌▒▌▒▄▄▒▒▐</p>
+                        <p class="noVMargin textUncover" style="--delay: 4.5s">░░░▌▌▒▒▀▒▒▒▒▒▒▒▒▒▒▐▒▒▒▒▒█▄█▌▒▒▌</p>
+                        <p class="noVMargin textUncover" style="--delay: 5s">░▄▀▒▐▒▒▒▒▒▒▒▒▒▒▒▄▀█▌▒▒▒▒▒▀▀▒▒▐░░░▄</p>
+                        <p class="noVMargin textUncover" style="--delay: 5.5s">▀▒▒▒▒▌▒▒▒▒▒▒▒▄▒▐███▌▄▒▒▒▒▒▒▒▄▀▀▀▀</p>
+                        <p class="noVMargin textUncover" style="--delay: 6s">▒▒▒▒▒▐▒▒▒▒▒▄▀▒▒▒▀▀▀▒▒▒▒▄█▀░░▒▌▀▀▄▄</p>
+                        <p class="noVMargin textUncover" style="--delay: 6.5s">▒▒▒▒▒▒█▒▄▄▀▒▒▒▒▒▒▒▒▒▒▒░░▐▒▀▄▀▄░░░░▀</p>
+                        <p class="noVMargin textUncover" style="--delay: 7s">▒▒▒▒▒▒▒█▒▒▒▒▒▒▒▒▒▄▒▒▒▒▄▀▒▒▒▌░░▀▄</p>
+                        <p class="noVMargin textUncover" style="--delay: 7.5s">▒▒▒▒▒▒▒▒▀▄▒▒▒▒▒▒▒▒▀▀▀▀▒▒▒▄▀</p>
                     </div>
                     <div class="catMargin">
                         <h1>Cat insert(uncover)</h1>
                         <button onclick="resetAnim('catUncover')">Restart</button>
                         <div id="catUncover">
-                            <p class="noVMargin textwrite">░░░░░░░░░░░░░░░░░░░░░▄▀░░▌</p>
-                            <p class="noVMargin textwrite2">░░░░░░░░░░░░░░░░░░░▄▀▐░░░▌</p>
-                            <p class="noVMargin textwrite3">░░░░░░░░░░░░░░░░▄▀▀▒▐▒░░░▌</p>
-                            <p class="noVMargin textwrite4">░░░░░▄▀▀▄░░░▄▄▀▀▒▒▒▒▌▒▒░░▌</p>
-                            <p class="noVMargin textwrite5">░░░░▐▒░░░▀▄▀▒▒▒▒▒▒▒▒▒▒▒▒▒█</p>
-                            <p class="noVMargin textwrite6">░░░░▌▒░░░░▒▀▄▒▒▒▒▒▒▒▒▒▒▒▒▒▀▄</p>
-                            <p class="noVMargin textwrite7">░░░░▐▒░░░░░▒▒▒▒▒▒▒▒▒▌▒▐▒▒▒▒▒▀▄</p>
-                            <p class="noVMargin textwrite8">░░░░▌▀▄░░▒▒▒▒▒▒▒▒▐▒▒▒▌▒▌▒▄▄▒▒▐</p>
-                            <p class="noVMargin textwrite9">░░░▌▌▒▒▀▒▒▒▒▒▒▒▒▒▒▐▒▒▒▒▒█▄█▌▒▒▌</p>
-                            <p class="noVMargin textwrite10">░▄▀▒▐▒▒▒▒▒▒▒▒▒▒▒▄▀█▌▒▒▒▒▒▀▀▒▒▐░░░▄</p>
-                            <p class="noVMargin textwrite11">▀▒▒▒▒▌▒▒▒▒▒▒▒▄▒▐███▌▄▒▒▒▒▒▒▒▄▀▀▀▀</p>
-                            <p class="noVMargin textwrite12">▒▒▒▒▒▐▒▒▒▒▒▄▀▒▒▒▀▀▀▒▒▒▒▄█▀░░▒▌▀▀▄▄</p>
-                            <p class="noVMargin textwrite13">▒▒▒▒▒▒█▒▄▄▀▒▒▒▒▒▒▒▒▒▒▒░░▐▒▀▄▀▄░░░░▀</p>
-                            <p class="noVMargin textwrite14">▒▒▒▒▒▒▒█▒▒▒▒▒▒▒▒▒▄▒▒▒▒▄▀▒▒▒▌░░▀▄</p>
-                            <p class="noVMargin textwrite15">▒▒▒▒▒▒▒▒▀▄▒▒▒▒▒▒▒▒▀▀▀▀▒▒▒▄▀</p>
+                            <p class="noVMargin textwrite" style="--delay: 0.5s">░░░░░░░░░░░░░░░░░░░░░▄▀░░▌</p>
+                            <p class="noVMargin textwrite" style="--delay: 1s">  ░░░░░░░░░░░░░░░░░░░▄▀▐░░░▌</p>
+                            <p class="noVMargin textwrite" style="--delay: 1.5s">░░░░░░░░░░░░░░░░▄▀▀▒▐▒░░░▌</p>
+                            <p class="noVMargin textwrite" style="--delay: 2s">  ░░░░░▄▀▀▄░░░▄▄▀▀▒▒▒▒▌▒▒░░▌</p>
+                            <p class="noVMargin textwrite" style="--delay: 2.5s">░░░░▐▒░░░▀▄▀▒▒▒▒▒▒▒▒▒▒▒▒▒█</p>
+                            <p class="noVMargin textwrite" style="--delay: 3s">  ░░░░▌▒░░░░▒▀▄▒▒▒▒▒▒▒▒▒▒▒▒▒▀▄</p>
+                            <p class="noVMargin textwrite" style="--delay: 3.5s">░░░░▐▒░░░░░▒▒▒▒▒▒▒▒▒▌▒▐▒▒▒▒▒▀▄</p>
+                            <p class="noVMargin textwrite" style="--delay: 4s">  ░░░░▌▀▄░░▒▒▒▒▒▒▒▒▐▒▒▒▌▒▌▒▄▄▒▒▐</p>
+                            <p class="noVMargin textwrite" style="--delay: 4.5s">░░░▌▌▒▒▀▒▒▒▒▒▒▒▒▒▒▐▒▒▒▒▒█▄█▌▒▒▌</p>
+                            <p class="noVMargin textwrite" style="--delay: 5s">  ░▄▀▒▐▒▒▒▒▒▒▒▒▒▒▒▄▀█▌▒▒▒▒▒▀▀▒▒▐░░░▄</p>
+                            <p class="noVMargin textwrite" style="--delay: 5.5s">▀▒▒▒▒▌▒▒▒▒▒▒▒▄▒▐███▌▄▒▒▒▒▒▒▒▄▀▀▀▀</p>
+                            <p class="noVMargin textwrite" style="--delay: 6s">  ▒▒▒▒▒▐▒▒▒▒▒▄▀▒▒▒▀▀▀▒▒▒▒▄█▀░░▒▌▀▀▄▄</p>
+                            <p class="noVMargin textwrite" style="--delay: 6.5s">▒▒▒▒▒▒█▒▄▄▀▒▒▒▒▒▒▒▒▒▒▒░░▐▒▀▄▀▄░░░░▀</p>
+                            <p class="noVMargin textwrite" style="--delay: 7s">  ▒▒▒▒▒▒▒█▒▒▒▒▒▒▒▒▒▄▒▒▒▒▄▀▒▒▒▌░░▀▄</p>
+                            <p class="noVMargin textwrite" style="--delay: 7.5s">▒▒▒▒▒▒▒▒▀▄▒▒▒▒▒▒▒▒▀▀▀▀▒▒▒▄▀</p>
                         </div>
                     </div>
                     <!-- For this to work without getting overlaped with other divs, you must set a manual padding equal to the size of the absolute content-->
@@ -381,15 +382,15 @@
                     </div>
                 </div>
             </div>
-
-            <div class="content hidden" id="section3">
+            <!-- Section -->
+            <div class="menu hidden" id="section3">
                 <div>
                     <h1 class="textCenter">Text Masking</h1>
-                    <a href="https://github.com/NicolasCrapanzano/Trucos-CSS">Check the git repo</a>
+                    <a href="https://github.com/NicolasCrapanzano/Trucos-CSS" target="_blank">Check the git repo</a>
                 </div>
                 <div class="grid col3">
                     <div class="buttonAlignLeft">
-                        <a href="credits.html"><button>Credits</button></a>
+                        <a href="./pages/credits.html"><button>Credits</button></a>
                     </div>
                     <div>
                         <button onclick="sectionSwap('section3','section1');defineHeight()">Text Visual Effects</button>
@@ -397,20 +398,21 @@
                         <button disabled>Current Section</button>
                     </div>
                     <div class="buttonAlignRight">
-                        <a href="bgmenu.html"><button >Menu</button></a>
+                        <a href="./pages/bgmenu.html"><button >Menu</button></a>
                     </div>
                 </div>
 
-                <div>
+                <div class="content">
                 <!-- source : https://codepen.io/tomlutzenberger/pen/GjNawX -->
                     <div>
-                        <h1>taken from https://codepen.io/tomlutzenberger/pen/GjNawX , this imprints an image into text</h1>
+                        <h1>taken from this <a href="https://codepen.io/tomlutzenberger/pen/GjNawX">codepen</a>, this imprints an image into text</h1>
                         <div class="imageDisplay">
                             <div class="asciiartCover maeImg ">
                                 <bold>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio et deserunt voluptatem nostrum sapiente ullam hic iste. Laudantium, dolores natus nobis quis illo quos iste. Beatae fugit officia cum accusantium illum cumque possimus, modi quisquam tempora provident animi quam odit odio voluptas natus eius hic facere. Quaerat ratione non dolores quas porro quae iste voluptatibus adipisci, commodi doloremque magni assumenda ex blanditiis exercitationem. Saepe, ullam laborum. Autem amet corporis et esse ab qui, culpa ipsam pariatur eum nisi commodi quisquam, minus est nihil. Perspiciatis necessitatibus quae dolor deserunt soluta. Unde et, fuga ipsum laudantium quia quos qui molestiae vero optio vel assumenda reprehenderit voluptatem illum ipsam ab ratione incidunt quod nihil perspiciatis nostrum aperiam consequatur porro animi. Corporis aspernatur, vitae veritatis eaque hic ad animi aliquid nisi et rem rerum reprehenderit placeat ipsam labore maiores. Veritatis iusto earum non quis pariatur expedita dolorum corporis harum vel dolore quasi asperiores fuga adipisci commodi ad molestias odio ullam corrupti, nisi in eos. Provident et nisi recusandae architecto nulla sit, repellat possimus tenetur ducimus facere dolorem at quam beatae? Iste illo amet reiciendis, rerum ipsam nihil voluptatum, asperiores magnam culpa eius possimus non unde magni officiis esse provident. Molestiae odit corrupti nostrum, eius aliquid hic nulla saepe earum laborum, nobis beatae ipsa consectetur vitae? Id ipsam eligendi consequatur nihil quos modi ipsa dolor corporis sapiente impedit error commodi neque quaerat quam numquam, autem non, iusto, maxime explicabo facilis hic iure? Ullam, veritatis earum? Odio, saepe. Sequi veniam doloremque quasi dolorem ad perspiciatis, ratione, quam obcaecati animi modi aliquid aut accusamus aspernatur facere earum velit nisi numquam nihil! Corporis obcaecati ad vitae debitis cum similique labore! Neque cumque perferendis deleniti perspiciatis dolorum excepturi saepe et fugit dignissimos? Vel odit ducimus atque, veritatis qui expedita voluptate sed consequatur impedit esse voluptas eveniet ut id exercitationem. Voluptas ut eius aut aliquam quam voluptatum aperiam, provident distinctio perferendis, veniam nemo ad labore beatae saepe sapiente, similique assumenda. Porro tempore necessitatibus ab deserunt culpa. Debitis placeat eos quas, deleniti ullam cum ratione esse nesciunt eum, suscipit, optio quod nisi repellendus magni amet vel! Magni, non. Esse quam maiores officia quisquam, minima quo non animi sint laudantium aliquid error praesentium atque tenetur doloremque libero enim quod recusandae adipisci. Modi maiores eius eum cum corporis enim a, magni totam architecto quaerat adipisci incidunt quasi eligendi assumenda accusamus? Tempora a fuga voluptatum expedita esse, eum quis doloremque distinctio necessitatibus cumque, minus et atque ipsa fugiat iusto itaque eligendi. Magnam, impedit at iure voluptatum nostrum consequatur dolore eos voluptate optio fuga distinctio minus rerum voluptatibus. Molestias quibusdam veritatis, libero, minus consequatur laborum iste consectetur sequi iusto pariatur quis in reiciendis sapiente praesentium, nobis nulla aperiam fugit ex fuga ducimus dolor dolorum sint. Quas fugit sunt veritatis harum modi, laboriosam molestias, illo quam id tempore cum possimus ad numquam incidunt? Distinctio quidem officia aut quis deleniti voluptatem aspernatur odio est officiis, inventore perspiciatis ipsum animi facere qui sunt ratione culpa ullam rerum tempore dignissimos omnis mollitia nemo. Maiores, corrupti labore? Voluptatibus, deserunt ad!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio et deserunt voluptatem nostrum sapiente ullam hic iste. Laudantium, dolores natus nobis quis illo quos iste. Beatae fugit officia cum accusantium illum cumque possimus, modi quisquam tempora provident animi quam odit odio voluptas natus eius hic facere. Quaerat ratione non dolores quas porro quae iste voluptatibus adipisci, commodi doloremque magni assumenda ex blanditiis exercitationem. Saepe, ullam laborum. Autem amet corporis et esse ab qui, culpa ipsam pariatur eum nisi commodi quisquam, minus est nihil. Perspiciatis necessitatibus quae dolor deserunt soluta. Unde et, fuga ipsum laudantium quia quos qui molestiae vero optio vel assumenda reprehenderit voluptatem illum ipsam ab ratione incidunt quod nihil perspiciatis nostrum aperiam consequatur porro animi. Corporis aspernatur, vitae veritatis eaque hic ad animi aliquid nisi et rem rerum reprehenderit placeat ipsam labore maiores. Veritatis iusto earum non quis pariatur expedita dolorum corporis harum vel dolore quasi asperiores fuga adipisci commodi ad molestias odio ullam corrupti, nisi in eos. Provident et nisi recusandae architecto nulla sit, repellat possimus tenetur ducimus facere dolorem at quam beatae? Iste illo amet reiciendis, rerum ipsam nihil voluptatum, asperiores magnam culpa eius possimus non unde magni officiis esse provident. Molestiae odit corrupti nostrum, eius aliquid hic nulla saepe earum laborum, nobis beatae ipsa consectetur vitae? Id ipsam eligendi consequatur nihil quos modi ipsa dolor corporis sapiente impedit error commodi neque quaerat quam numquam, autem non, iusto, maxime explicabo facilis hic iure? Ullam, veritatis earum? Odio, saepe. Sequi veniam doloremque quasi dolorem ad perspiciatis, ratione, quam obcaecati animi modi aliquid aut accusamus aspernatur facere earum velit nisi numquam nihil! Corporis obcaecati ad vitae debitis cum similique labore! Neque cumque perferendis deleniti perspiciatis dolorum excepturi saepe et fugit dignissimos? Vel odit ducimus atque, veritatis qui expedita voluptate sed consequatur impedit esse voluptas eveniet ut id exercitationem. Voluptas ut eius aut aliquam quam voluptatum aperiam, provident distinctio perferendis, veniam nemo ad labore beatae saepe sapiente, similique assumenda. Porro tempore necessitatibus ab deserunt culpa. Debitis placeat eos quas, deleniti ullam cum ratione esse nesciunt eum, suscipit, optio quod nisi repellendus magni amet vel! Magni, non. Esse quam maiores officia quisquam, minima quo non animi sint laudantium aliquid error praesentium atque tenetur doloremque libero enim quod recusandae adipisci. Modi maiores eius eum cum corporis enim a, magni totam architecto quaerat adipisci incidunt quasi eligendi assumenda accusamus? Tempora a fuga voluptatum expedita esse, eum quis doloremque distinctio necessitatibus cumque, minus et atque ipsa fugiat iusto itaque eligendi. Magnam, impedit at iure voluptatum nostrum consequatur dolore eos voluptate optio fuga distinctio minus rerum voluptatibus. Molestias quibusdam veritatis, libero, minus consequatur laborum iste consectetur sequi iusto pariatur quis in reiciendis sapiente praesentium, nobis nulla aperiam fugit ex fuga ducimus dolor dolorum sint. Quas fugit sunt veritatis harum modi, laboriosam molestias, illo quam id tempore cum possimus ad numquam incidunt? Distinctio quidem officia aut quis deleniti voluptatem aspernatur odio est officiis, inventore perspiciatis ipsum animi facere qui sunt ratione culpa ullam rerum tempore dignissimos omnis mollitia nemo. Maiores, corrupti labore? Voluptatibus, deserunt ad!</bold>
                             </div>
                         </div>
-                        </div>
+
+                    </div>
                         <div class="padding70">
                             <h1>instead of standar chars you can use some ascii symbols for cool effects</h1>
                             <div class="imageDisplay">
@@ -440,21 +442,21 @@
                             <h1 class="textCenter">Loading bar</h1>                                                        
                             <button onclick="resetAnim('asciiLoadingBar')">Restart</button>
                             <div id="asciiLoadingBar" class="flex" style="margin-left: 42%;">
-                                <span class="asciiLoad lettersSpan">▀</span>
-                                <span class="asciiLoad2 lettersSpan">▀</span>
-                                <span class="asciiLoad3 lettersSpan">▀</span>
-                                <span class="asciiLoad4 lettersSpan">▀</span>
-                                <span class="asciiLoad5 lettersSpan">▀</span>
-                                <span class="asciiLoad6 lettersSpan">▀</span>
-                                <span class="asciiLoad7 lettersSpan">▀</span>
-                                <span class="asciiLoad8 lettersSpan">▀</span>
-                                <span class="asciiLoad9 lettersSpan">▀</span>
-                                <span class="asciiLoad10 lettersSpan">▀</span>
-                                <span class="asciiLoad11 lettersSpan">▀</span>
-                                <span class="asciiLoad12 lettersSpan">▀</span>
-                                <span class="asciiLoad13 lettersSpan">▀</span>
-                                <span class="asciiLoad14 lettersSpan">▀</span>
-                                <span class="asciiLoad15 lettersSpan">▀</span>
+                                <span class="asciiLoad lettersSpan" style="--delay: 0.5s">▀</span>
+                                <span class="asciiLoad lettersSpan" style="--delay: 1s">▀</span>
+                                <span class="asciiLoad lettersSpan" style="--delay: 1.5s">▀</span>
+                                <span class="asciiLoad lettersSpan" style="--delay: 2s">▀</span>
+                                <span class="asciiLoad lettersSpan" style="--delay: 2.5s">▀</span>
+                                <span class="asciiLoad lettersSpan" style="--delay: 3s">▀</span>
+                                <span class="asciiLoad lettersSpan" style="--delay: 3.5s">▀</span>
+                                <span class="asciiLoad lettersSpan" style="--delay: 4s">▀</span>
+                                <span class="asciiLoad lettersSpan" style="--delay: 4.5s">▀</span>
+                                <span class="asciiLoad lettersSpan" style="--delay: 5s">▀</span>
+                                <span class="asciiLoad lettersSpan" style="--delay: 5.5s">▀</span>
+                                <span class="asciiLoad lettersSpan" style="--delay: 6s">▀</span>
+                                <span class="asciiLoad lettersSpan" style="--delay: 6.5s">▀</span>
+                                <span class="asciiLoad lettersSpan" style="--delay: 7s">▀</span>
+                                <span class="asciiLoad lettersSpan" style="--delay: 7.5s">▀</span>
                             </div>                        
                         </div>
                         <div class="catMargin textLeft">
@@ -479,16 +481,15 @@
                             <button onclick="pauseAnim('loadingBar')">■</button>
                             <div class="flex" style="margin-left: 28%;">
                                 <div class="absolutePos index1">                                    
-                                    <div class="loadingBarEmpty"></div>
+                                    <div class="loadingBarEmpty" style="--height: 10px;--width: 500px;"></div>
                                 </div>
                                 <div class="absolutePos index2" >
-                                    <div class="absolutePos loadingBar loadingBarGreen" id="loadingBar"></div>
+                                    <div class="absolutePos loadingBar loadingBarGreen" id="loadingBar" style="--height: 10px;--width: 0px;"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                        &nbsp;
-                    </div>
+                </div>
                 </div>
             </div>
         </div>
@@ -502,52 +503,9 @@
         //this has to be defined so the first time the page loads it defines the height of the content, in this case for setting the bg color
         document.onload = defineHeight();
 
-        //call this when changing sections too!
-        function defineHeight(){
-            let mainDiv = document.getElementById("mainContainer");
-            let bgIndex1 = document.getElementsByClassName("bgIndex1");
-            let mainHeight = mainDiv.offsetHeight;
-            
-            for (let index = 0; index < bgIndex1.length; index++) {                        
-                bgIndex1[index].style.height = mainHeight + "px";
-            }
-        }
 
-        //pass the current active section and the one you want to activate as params
-        function sectionSwap(current,next){
-            let sections = ["section1","section2","section3"];
-            let Celement = document.getElementById(current);
-            let Nelement = document.getElementById(next);
 
-            Celement.classList.add("hidden");
-            Nelement.classList.remove("hidden");
-        }
 
-        function pauseAnim(animation){
-            let anim = document.getElementById(animation);
-            anim.style.webkitAnimationPlayState = "paused";            
-        }
-
-        function playAnim(animation){
-            let anim = document.getElementById(animation);            
-            anim.style.webkitAnimationPlayState = "running";
-        }
-        //WTF is this function?
-        //what we are doing here is, pass an id as a parameter
-        //find it on the DOM
-        //changing the display no nothing, so it dissapears
-        //wait 500 miliseconds, and upon re appearing it wil re-start the animation
-        //for some reason css doesnt have an inbuilt way of reseting animations :/
-        function resetAnim(animation){
-            let anim = document.getElementById(animation);
-            let prevDisplay = anim.style.display; //save the display to prevent breaking the css structure
-
-            anim.style.display = "none";
-
-            setTimeout(function(){
-                anim.style.display = prevDisplay;
-            }, 500)
-        }
     </script>
 </body>
 </html>

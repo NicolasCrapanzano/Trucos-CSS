@@ -4,16 +4,101 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="bgstyles.css">
-    <title>Bg menu</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/bgstyles.css">
+    <script src="../js/utilities.js"></script>
+    <title>Main Menu</title>
 </head>
 <body>
     <div>
-        <h1 class="textCenter">main menu</h1>
-        <a href="bganimation.html">Visual effects on the bg</a>
-        <a href="#">(Static) tiled bg</a>
-        <a href="#">(Animated) tiled bg</a>
+        <!-- Sides -->
+        <div class="grid col2">
+            <!-- Left -->
+            <div class="VanillaBgL bgIndex1 index1" id="left" style="height: 100vh; overflow-y: hidden;">
+                
+            </div>
+            <!-- Right -->
+            <div class="VanillaBgR bgIndex1 index1" id="right" style="height: 100vh; overflow-y: hidden;">
+                
+            </div>
+        </div>
+        <div class="mainContainer borderStyle1 textCenter absolute index5" id="mainContainer" style="height: 100vh;">
+            <div class="menu" id="section1">
+                <div>
+                    <h1 class="">Section 1</h1>
+                    <a href="https://github.com/NicolasCrapanzano/Trucos-CSS" target="_blank">Check the git repo</a>
+                </div>
+                <div class="grid col3">
+                    <div class="buttonAlignLeft">
+                        <a href="./credits.html"><button>Credits</button></a>
+                    </div>
+                    <div>
+                        <button disabled>Current Section</button>
+                        <button onclick="sectionSwap('section1','section2');defineHeight()">section 2</button>
+                        <button onclick="sectionSwap('section1','section3');defineHeight()">section 3</button>
+                    </div>
+                    <div class="buttonAlignRight">
+                        <button disabled>Menu</button>
+                    </div>
+                    <div class="content textCenter">
+                        <a href="bganimation.html">Check Out Some Cool Webpage Themes</a>
+                        <a href="../index.html">Some Cool Animations And CSS Tricks</a>
+                        <a href="#">Tutorials (WIP)</a>
+                    </div>
+                </div>
+            </div>
+            <div class="menu hidden" id="section2">
+                <div>
+                    <h1 class="">Section 2</h1>
+                    <a href="https://github.com/NicolasCrapanzano/Trucos-CSS" target="_blank">Check the git repo</a>
+                </div>
+                <div class="grid col3">
+                    <div class="buttonAlignLeft">
+                        <a href="./credits.html"><button>Credits</button></a>
+                    </div>
+                    <div>
+                        <button onclick="sectionSwap('section2','section1');defineHeight()">Section 1</button>
+                        <button disabled>Current Section</button>
+                        <button onclick="sectionSwap('section2','section3');defineHeight()">Section 3</button>
+                    </div>
+                    <div class="buttonAlignRight">
+                        <button disabled>Menu</button>
+                    </div>
+                    <div class="content">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="menu hidden" id="section3">
+                <div>
+                    <h1 class="">Section 3</h1>
+                    <a href="https://github.com/NicolasCrapanzano/Trucos-CSS" target="_blank">Check the git repo</a>
+                </div>
+                <div class="grid col3">
+                    <div class="buttonAlignLeft">
+                        <a href="./credits.html"><button>Credits</button></a>
+                    </div>
+                    <div>
+                        <button onclick="sectionSwap('section3','section1');defineHeight()">Section 1</button>
+                        <button onclick="sectionSwap('section3','section2');defineHeight()">Section 2</button>
+                        <button disabled>Current Section</button>
+                    </div>
+                    <div class="buttonAlignRight">
+                        <button disabled>Menu</button>
+                    </div>
+                    <div class="content">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="absolute index2 test">
+
+            </div>
+        </div>
     </div>
 </body>
+<script>
+
+</script>
 </html>

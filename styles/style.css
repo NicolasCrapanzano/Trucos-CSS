@@ -1,3 +1,6 @@
+:root{
+    --loadingBar-color: rgb(123, 255, 71);;
+}
 .shadowAnim{
     animation: 2s ease-in-out infinite;
     animation-name: textShadow;
@@ -14,248 +17,46 @@
     animation: 4s ease-in-out var(--delay) infinite;
     animation-name: textShadowAndColor;
 }
-
-
 .textUncover{
     color: rgba(255, 255, 255, 0);
-    animation: 1s ease-in-out 0.5s infinite;
+    animation: 1s ease-in-out var(--delay) infinite;
     animation-name: textBlinkBlack;
 }
-.textUncover2{
-    color: rgba(255, 255, 255, 0);
-    animation: 1s ease-in-out 1s infinite;
-    animation-name: textBlinkBlack;
-}
-.textUncover3{
-    color: rgba(255, 255, 255, 0);
-    animation: 1s ease-in-out 1.5s infinite;
-    animation-name: textBlinkBlack;
-}
-.textUncover4{
-    color: rgba(255, 255, 255, 0);
-    animation: 1s ease-in-out 2s infinite;
-    animation-name: textBlinkBlack;
-}
-.textUncover5{
-    color: rgba(255, 255, 255, 0);
-    animation: 1s ease-in-out 2.5s infinite;
-    animation-name: textBlinkBlack;
-}
-.textUncover6{
-    color: rgba(255, 255, 255, 0);
-    animation: 1s ease-in-out 3s infinite;
-    animation-name: textBlinkBlack;
-}
-.textUncover7{
-    color: rgba(255, 255, 255, 0);
-    animation: 1s ease-in-out 3.5s infinite;
-    animation-name: textBlinkBlack;
-}
-.textUncover8{
-    color: rgba(255, 255, 255, 0);
-    animation: 1s ease-in-out 4s infinite;
-    animation-name: textBlinkBlack;
-}
-.textUncover9{
-    color: rgba(255, 255, 255, 0);
-    animation: 1s ease-in-out 4.5s infinite;
-    animation-name: textBlinkBlack;
-}
-.textUncover10{
-    color: rgba(255, 255, 255, 0);
-    animation: 1s ease-in-out 5s infinite;
-    animation-name: textBlinkBlack;
-}
-.textUncover11{
-    color: rgba(255, 255, 255, 0);
-    animation: 1s ease-in-out 5.5s infinite;
-    animation-name: textBlinkBlack;
-}
-.textUncover12{
-    color: rgba(255, 255, 255, 0);
-    animation: 1s ease-in-out 6s infinite;
-    animation-name: textBlinkBlack;
-}
-.textUncover13{
-    color: rgba(255, 255, 255, 0);
-    animation: 1s ease-in-out 6.5s infinite;
-    animation-name: textBlinkBlack;
-}
-.textUncover14{
-    color: rgba(255, 255, 255, 0);
-    animation: 1s ease-in-out 7s infinite;
-    animation-name: textBlinkBlack;
-}
-.textUncover15{
-    color: rgba(255, 255, 255, 0);
-    animation: 1s ease-in-out 7.5s infinite;
-    animation-name: textBlinkBlack;
-}
-
-
 .textwrite{
     color: rgba(255, 255, 255, 0);
-    animation: 1s ease-in-out 0.5s forwards;
+    animation: 1s ease-in-out var(--delay) forwards;
     animation-name: textUncover;
 }
-.textwrite2{
-    color: rgba(255, 255, 255, 0);
-    animation: 1s ease-in-out 1s forwards;
-    animation-name: textUncover;
-}
-.textwrite3{
-    color: rgba(255, 255, 255, 0);
-    animation: 1s ease-in-out 1.5s forwards;
-    animation-name: textUncover;
-}
-.textwrite4{
-    color: rgba(255, 255, 255, 0);
-    animation: 1s ease-in-out 2s forwards;
-    animation-name: textUncover;
-}
-.textwrite5{
-    color: rgba(255, 255, 255, 0);
-    animation: 1s ease-in-out 2.5s forwards;
-    animation-name: textUncover;
-}
-.textwrite6{
-    color: rgba(255, 255, 255, 0);
-    animation: 1s ease-in-out 3s forwards;
-    animation-name: textUncover;
-}
-.textwrite7{
-    color: rgba(255, 255, 255, 0);
-    animation: 1s ease-in-out 3.5s forwards;
-    animation-name: textUncover;
-}
-.textwrite8{
-    color: rgba(255, 255, 255, 0);
-    animation: 1s ease-in-out 4s forwards;
-    animation-name: textUncover;
-}
-.textwrite9{
-    color: rgba(255, 255, 255, 0);
-    animation: 1s ease-in-out 4.5s forwards;
-    animation-name: textUncover;
-}
-.textwrite10{
-    color: rgba(255, 255, 255, 0);
-    animation: 1s ease-in-out 5s forwards;
-    animation-name: textUncover;
-}
-.textwrite11{
-    color: rgba(255, 255, 255, 0);
-    animation: 1s ease-in-out 5.5s forwards;
-    animation-name: textUncover;
-}
-.textwrite12{
-    color: rgba(255, 255, 255, 0);
-    animation: 1s ease-in-out 6s forwards;
-    animation-name: textUncover;
-}
-.textwrite13{
-    color: rgba(255, 255, 255, 0);
-    animation: 1s ease-in-out 6.5s forwards;
-    animation-name: textUncover;
-}
-.textwrite14{
-    color: rgba(255, 255, 255, 0);
-    animation: 1s ease-in-out 7s forwards;
-    animation-name: textUncover;
-}
-.textwrite15{
-    color: rgba(255, 255, 255, 0);
-    animation: 1s ease-in-out 7.5s forwards;
-    animation-name: textUncover;
-}
-
 .asciiLoad{
     color: gray;
-    animation: 1s ease-in-out 0.5s forwards;
+    animation: 1s ease-in-out var(--delay) forwards;
     animation-name: asciiLoad;
 }
-.asciiLoad2{
-    color: gray;
-    animation: 1s ease-in-out 1s forwards;
-    animation-name: asciiLoad;
-}
-.asciiLoad3{
-    color: gray;
-    animation: 1s ease-in-out 1.5s forwards;
-    animation-name: asciiLoad;
-}
-.asciiLoad4{
-    color: gray;
-    animation: 1s ease-in-out 2s forwards;
-    animation-name: asciiLoad;
-}
-.asciiLoad5{
-    color: gray;
-    animation: 1s ease-in-out 2.5s forwards;
-    animation-name: asciiLoad;
-}
-.asciiLoad6{
-    color: gray;
-    animation: 1s ease-in-out 3s forwards;
-    animation-name: asciiLoad;
-}
-.asciiLoad7{
-    color: gray;
-    animation: 1s ease-in-out 3.5s forwards;
-    animation-name: asciiLoad;
-}
-.asciiLoad8{
-    color: gray;
-    animation: 1s ease-in-out 4s forwards;
-    animation-name: asciiLoad;
-}
-.asciiLoad9{
-    color: gray;
-    animation: 1s ease-in-out 4.5s forwards;
-    animation-name: asciiLoad;
-}
-.asciiLoad10{
-    color: gray;
-    animation: 1s ease-in-out 5s forwards;
-    animation-name: asciiLoad;
-}
-.asciiLoad11{
-    color: gray;
-    animation: 1s ease-in-out 5.5s forwards;
-    animation-name: asciiLoad;
-}
-.asciiLoad12{
-    color: gray;
-    animation: 1s ease-in-out 6s forwards;
-    animation-name: asciiLoad;
-}
-.asciiLoad13{
-    color: gray;
-    animation: 1s ease-in-out 6.5s forwards;
-    animation-name: asciiLoad;
-}
-.asciiLoad14{
-    color: gray;
-    animation: 1s ease-in-out 7s forwards;
-    animation-name: asciiLoad;
-}
-.asciiLoad15{
-    color: gray;
-    animation: 1s ease-in-out 7.5s forwards;
-    animation-name: asciiLoad;
-}
-
 .loadingBarEmpty{
     background-color: grey;
-    height: 10px;
-    width: 500px;
-    
+    height: var(--height);
+    width: var(--width);
 }
 .loadingBar{    
-    height: 10px;
-    width: 0px;
+    height: var(--height);
+    width: var(--width);
     animation: loadingBar 6s ease-in-out forwards;
 }
+.loadingBarMC{    
+    height: var(--height);
+    width: var(--width);
+    animation: loadingBarMC 3s ease-in-out forwards;
+}
+.loadContainerMC{
+    margin-left: 43.5%;
+}
+
+.fallingBlock{
+    width: var(--width);
+    filter: opacity(var(--op));
+    animation: fallingBlock var(--time) linear infinite;
+}
+
 
 .textBlinkW{
     color: black;
@@ -284,7 +85,7 @@
 }
 
 .loadingBarGreen{
-    background-color: rgb(123, 255, 71);
+    background-color: var(--loadingBar-color);
 }
 .marqueeContainer{
     margin-left: 36%;
@@ -295,15 +96,11 @@
     width: 300px;
     white-space: nowrap;
 }
-.marquee{
+.marqueeSteps{
     animation: marqueeR 20s steps(350, end) infinite;    
 }
-.marqueeS{
-    animation: 15s linear infinite;
-    animation-name: marqueeR;
-}
-.marqueeF{
-    animation: 4s linear infinite;
+.marquee{
+    animation: var(--delay) linear infinite;
     animation-name: marqueeR;
 }
 
@@ -478,6 +275,22 @@
         width: 500px;
     }
 }
+@keyframes loadingBarMC{
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 250px;
+    }
+}
+@keyframes fallingBlock{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(100vh);
+    }
+}
 @keyframes marqueeR{
     0%{
         transform: translatex(100%);
@@ -538,10 +351,10 @@
 }
 @keyframes asciiLoad{
     50% {
-        color: gray;
+        color: rgb(191, 255, 71);
     }
     100%{
-        color: green;
+        color: var(--loadingBar-color);
     }
 }
 @keyframes textColAnim{

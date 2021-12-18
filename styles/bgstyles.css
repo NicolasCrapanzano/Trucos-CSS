@@ -14,15 +14,63 @@ body{
 .absolute{
     position: absolute;
 }
-.bgIndex1{
 
+.MCbody{
+    overflow: hidden;
 }
-.left{
+.minecraftBGTiles{
+    z-index: 1;
+    position: absolute;
+    background-image: url(../images/dirt.png);    
+    background-repeat: repeat;
+    background-size: 64px 64px;
+}
+.minecraftBG{
+    z-index: 1;
+    position: absolute;
+    background-image: url(../images/dirt.png);    
+    background-repeat: repeat;
+    background-size: 64px 64px;
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+    top: 0;
+}
+.darkOverlay{
+    background-color: rgba(0, 0, 0, 0.705);
+    position: absolute;
+    z-index: 2;
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+    top: 0;
+}
+.MCUI{
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    position: absolute;
+    z-index: 3;
+    font-size: 1.3rem;
+}
+.MCtext{
+    margin-top: 18%;
+    text-align: center;
+}
+.MCTitle{
+}
+.MCSubTitle{
+    padding-top: 5px;
+}
+
+
+.VanillaBgL{
     background-color: skyblue;
 }
-.right{
+.VanillaBgR{
     background-color: slateblue;
 }
+
 .mainContainer{
     background-color: burlywood;
     width: 60vw;
@@ -39,6 +87,9 @@ body{
 }
 .textLeft{
     text-align: left;
+}
+.textRight{
+    text-align: right;
 }
 .buttonAlignLeft{
     text-align: initial;

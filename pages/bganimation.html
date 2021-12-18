@@ -4,25 +4,167 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="bgstyles.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/bgstyles.css">
+    <script src="../js/utilities.js"></script>
     <title>animated bg</title>
 </head>
 <body>
     <div>
-        <div class="grid col2">
-            <div class="left index1"></div>
-            <div class="right index1"></div>
+        <!-- Background-->
+        <div class="absolute index2 test minecraftBGTiles MCTheme hidden">
+            <div class="darkOverlay">
+
+            </div>
         </div>
-        <div class="mainContainer absolute index5">
-            <h1 class="textCenter">Title</h1>
+        <!-- Sides -->
+        <div class="grid col2">
+            <!-- Left -->
+            <div class="VanillaBgL bgIndex1 index1" id="left" style="height: 100vh; overflow-y: hidden;">
+                <div class="hidden MCTheme">
+                    <div class="">                
+                        <img src="../images/GrassNew.png" class="fallingBlock index5" style="--width: 120px ; --op: 1 ; --time: 3s" alt="Minecraft grass block">
+                        <img src="../images/GrassNew.png" class="fallingBlock index5" style="--width: 150px ; --op: 1 ; --time: 5s" alt="Minecraft grass block">
+                        <img src="../images/GrassNew.png" class="fallingBlock index5" style="--width: 130px ; --op: 1 ; --time: 7s" alt="Minecraft grass block">
+                    </div>
+                    <div class="">                
+                        <img src="../images/GrassNew.png" class="fallingBlock" style="--width: 90px ; --op: 0.2 ; --time: 6s" alt="Minecraft grass block">
+                        <img src="../images/GrassNew.png" class="fallingBlock" style="--width: 70px ; --op: 0.3 ; --time: 4s" alt="Minecraft grass block">
+                        <img src="../images/GrassNew.png" class="fallingBlock" style="--width: 80px ; --op: 0.4 ; --time: 5s" alt="Minecraft grass block">
+                        <img src="../images/GrassNew.png" class="fallingBlock" style="--width: 90px ; --op: 0.2 ; --time: 3s" alt="Minecraft grass block">
+                    </div>
+                </div>
+            </div>
+            <!-- Right -->
+            <div class="VanillaBgR bgIndex1 index1" id="right" style="height: 100vh; overflow-y: hidden;">
+                <div class="hidden MCTheme" >
+                    <div class="textRight">                
+                        <img src="../images/GrassNew.png" class="fallingBlock index5" style="--width: 120px ; --op: 1 ; --time: 3s" alt="Minecraft grass block">
+                        <img src="../images/GrassNew.png" class="fallingBlock index5" style="--width: 130px ; --op: 1 ; --time: 7s" alt="Minecraft grass block">
+                        <img src="../images/GrassNew.png" class="fallingBlock index5" style="--width: 150px ; --op: 1 ; --time: 5s" alt="Minecraft grass block">
+                    </div>
+                    <div class="textRight">                
+                        <img src="../images/GrassNew.png" class="fallingBlock" style="--width: 70px ; --op: 0.3 ; --time: 4s" alt="Minecraft grass block">
+                        <img src="../images/GrassNew.png" class="fallingBlock" style="--width: 80px ; --op: 0.4 ; --time: 5s" alt="Minecraft grass block">
+                        <img src="../images/GrassNew.png" class="fallingBlock" style="--width: 90px ; --op: 0.2 ; --time: 3s" alt="Minecraft grass block">
+                        <img src="../images/GrassNew.png" class="fallingBlock" style="--width: 90px ; --op: 0.2 ; --time: 6s" alt="Minecraft grass block">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mainContainer borderStyle1 textCenter absolute index5" id="mainContainer" style="height: 100vh;">
+            <div class="menu" id="section1">
+                <div>
+                    <h1 class="">Vanilla Theme</h1>
+                    <a href="https://github.com/NicolasCrapanzano/Trucos-CSS" target="_blank">Check the git repo</a>
+                </div>
+                <div class="grid col3">
+                    <div class="buttonAlignLeft">
+                        <a href="./credits.html"><button>Credits</button></a>
+                    </div>
+                    <div>
+                        <button disabled>Current Section</button>
+                        <button onclick="sectionSwap('section1','section2');defineHeight();minecraftThemeOn();">Minecraft</button>
+                        <button onclick="sectionSwap('section1','section3');defineHeight()">Dogs!</button>
+                    </div>
+                    <div class="buttonAlignRight">
+                        <a href="./bgmenu.html"><button >Menu</button></a>
+                    </div>
+                    <div class="content">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="menu hidden" id="section2">
+                <div>
+                    <h1 class="">Minecraft</h1>
+                    <a href="https://github.com/NicolasCrapanzano/Trucos-CSS" target="_blank">Check the git repo</a>
+                </div>
+                <div class="grid col3">
+                    <div class="buttonAlignLeft">
+                        <a href="./credits.html"><button>Credits</button></a>
+                    </div>
+                    <div>
+                        <button onclick="sectionSwap('section2','section1');defineHeight();minecraftThemeOff();">Vanilla</button>
+                        <button disabled>Current Section</button>
+                        <button onclick="sectionSwap('section2','section3');defineHeight()">Dogs!</button>
+                    </div>
+                    <div class="buttonAlignRight">
+                        <a href="./bgmenu.html"><button >Menu</button></a>
+                    </div>
+                    <div class="content">
+                        <button><a href="MCLoading.html">Minecraft beta loading screen</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu hidden" id="section3">
+                <div>
+                    <h1 class="">Dogs!</h1>
+                    <a href="https://github.com/NicolasCrapanzano/Trucos-CSS" target="_blank">Check the git repo</a>
+                </div>
+                <div class="grid col3">
+                    <div class="buttonAlignLeft">
+                        <a href="./credits.html"><button>Credits</button></a>
+                    </div>
+                    <div>
+                        <button onclick="sectionSwap('section3','section1');defineHeight()">Vanilla</button>
+                        <button onclick="sectionSwap('section3','section2');defineHeight();">Minecraft</button>
+                        <button disabled>Current Section</button>
+                    </div>
+                    <div class="buttonAlignRight">
+                        <a href="./bgmenu.html"><button >Menu</button></a>
+                    </div>
+                    <div class="content">
+                        
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="absolute index2 test">
-            <div class="dogwalk">
+            <div class="dogwalk hidden">
                 <p><i>Dont mind me, just a doggo passing by</i></p>
-                <img src="dogwalk.gif" class="" alt="a gif of a dog walking">
+                <img src="../images/dogwalk.gif" class="" alt="a gif of a dog walking">
+            </div>
+            <div class="">                
+
             </div>
         </div>
     </div>
 </body>
+<script>
+    function randomizeBlocks(){
+        let fallBlocks = document.getElementsByClassName("fallingBlock");
+        for (let index = 0; index < fallBlocks.length; index++) {
+            fallBlocks[index].style.cssText = `--width: ${getRndInteger(50,150)}px ; --op: ${getRndNormalizedFloat()+0.1} ; --time: ${getRndInteger(3,10)}s;`            
+        }
+    }
+    function getRndInteger(min, max) {
+        return Math.floor(Math.random() * (max - min) ) + min;
+    }
+    function getRndNormalizedFloat() {
+        return Math.random();
+    }
+    function minecraftThemeOn(){
+        let mcElements = document.getElementsByClassName("MCTheme");
+        let bgSides = document.getElementsByClassName("bgIndex1");
+        bgSides[0].classList.remove("VanillaBgL");
+        bgSides[1].classList.remove("VanillaBgR");
+        for (let index = 0; index < mcElements.length; index++) {            
+            if( mcElements[index].classList.contains("hidden") ){
+                mcElements[index].classList.remove("hidden");
+            }            
+        }
+    }
+    function minecraftThemeOff(){
+        let mcElements = document.getElementsByClassName("MCTheme");
+        let bgSides = document.getElementsByClassName("bgIndex1");
+        for (let index = 0; index < mcElements.length; index++) {            
+            mcElements[index].classList.add("hidden");
+            
+        }
+        bgSides[0].classList.add("VanillaBgL");
+        bgSides[1].classList.add("VanillaBgR");
+    }
+    
+</script>
 </html>
