@@ -58,7 +58,7 @@
                     <h1 class="">Vanilla Theme</h1>
                     <a href="https://github.com/NicolasCrapanzano/Trucos-CSS" target="_blank">Check the git repo</a>
                 </div>
-                <div class="grid col3">
+                <div class="grid col3 marginBottom">
                     <div class="buttonAlignLeft">
                         <a href="./credits.html"><button>Credits</button></a>
                     </div>
@@ -70,9 +70,9 @@
                     <div class="buttonAlignRight">
                         <a href="./bgmenu.html"><button >Menu</button></a>
                     </div>
-                    <div class="content">
-                        
-                    </div>
+                </div>
+                <div class="content">
+                    
                 </div>
             </div>
             <div class="menu hidden" id="section2">
@@ -80,21 +80,22 @@
                     <h1 class="">Minecraft</h1>
                     <a href="https://github.com/NicolasCrapanzano/Trucos-CSS" target="_blank">Check the git repo</a>
                 </div>
-                <div class="grid col3">
+                <div class="grid col3 marginBottom">
                     <div class="buttonAlignLeft">
                         <a href="./credits.html"><button>Credits</button></a>
                     </div>
                     <div>
                         <button onclick="sectionSwap('section2','section1');defineHeight();minecraftThemeOff();">Vanilla</button>
                         <button disabled>Current Section</button>
-                        <button onclick="sectionSwap('section2','section3');defineHeight()">Dogs!</button>
+                        <button onclick="sectionSwap('section2','section3');defineHeight();minecraftThemeOff();">Dogs!</button>
                     </div>
                     <div class="buttonAlignRight">
                         <a href="./bgmenu.html"><button >Menu</button></a>
                     </div>
-                    <div class="content">
-                        <button><a href="MCLoading.html">Minecraft beta loading screen</a></button>
-                    </div>
+                </div>
+                <div class="content">
+                    <button><a href="MCLoading.html">Minecraft beta loading screen</a></button>
+                    <button onclick="randomizeBlocks()">Randomize blocks</button>
                 </div>
             </div>
             <div class="menu hidden" id="section3">
@@ -102,21 +103,21 @@
                     <h1 class="">Dogs!</h1>
                     <a href="https://github.com/NicolasCrapanzano/Trucos-CSS" target="_blank">Check the git repo</a>
                 </div>
-                <div class="grid col3">
+                <div class="grid col3 marginBottom">
                     <div class="buttonAlignLeft">
                         <a href="./credits.html"><button>Credits</button></a>
                     </div>
                     <div>
-                        <button onclick="sectionSwap('section3','section1');defineHeight()">Vanilla</button>
-                        <button onclick="sectionSwap('section3','section2');defineHeight();">Minecraft</button>
+                        <button onclick="sectionSwap('section3','section1');defineHeight();minecraftThemeOff();">Vanilla</button>
+                        <button onclick="sectionSwap('section3','section2');defineHeight();minecraftThemeOn();">Minecraft</button>
                         <button disabled>Current Section</button>
                     </div>
                     <div class="buttonAlignRight">
                         <a href="./bgmenu.html"><button >Menu</button></a>
                     </div>
-                    <div class="content">
-                        
-                    </div>
+                </div>
+                <div class="content">
+                    
                 </div>
             </div>
         </div>

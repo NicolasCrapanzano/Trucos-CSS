@@ -1,375 +1,369 @@
-:root{
-    --loadingBar-color: rgb(123, 255, 71);;
+:root {
+  --loadingBar-color: rgb(123, 255, 71);
 }
-.shadowAnim{
-    animation: 2s ease-in-out infinite;
-    animation-name: textShadow;
+.shadowAnim {
+  animation: 2s ease-in-out infinite;
+  animation-name: textShadow;
 }
-.textAnim{
-    animation: 2s ease-in-out infinite;
-    animation-name: textColAnim;
-}
-
-.textShadowMargin{
-    margin-left: 48%;
-}
-.textShadowAnim{
-    animation: 4s ease-in-out var(--delay) infinite;
-    animation-name: textShadowAndColor;
-}
-.textUncover{
-    color: rgba(255, 255, 255, 0);
-    animation: 1s ease-in-out var(--delay) infinite;
-    animation-name: textBlinkBlack;
-}
-.textwrite{
-    color: rgba(255, 255, 255, 0);
-    animation: 1s ease-in-out var(--delay) forwards;
-    animation-name: textUncover;
-}
-.asciiLoad{
-    color: gray;
-    animation: 1s ease-in-out var(--delay) forwards;
-    animation-name: asciiLoad;
-}
-.loadingBarEmpty{
-    background-color: grey;
-    height: var(--height);
-    width: var(--width);
-}
-.loadingBar{    
-    height: var(--height);
-    width: var(--width);
-    animation: loadingBar 6s ease-in-out forwards;
-}
-.loadingBarMC{    
-    height: var(--height);
-    width: var(--width);
-    animation: loadingBarMC 3s ease-in-out forwards;
-}
-.loadContainerMC{
-    margin-left: 43.5%;
+.textAnim {
+  animation: 2s ease-in-out infinite;
+  animation-name: textColAnim;
 }
 
-.fallingBlock{
-    width: var(--width);
-    filter: opacity(var(--op));
-    animation: fallingBlock var(--time) linear infinite;
+.textShadowMargin {
+  margin-left: 48%;
+}
+.textShadowAnim {
+  animation: 4s ease-in-out var(--delay) infinite;
+  animation-name: textShadowAndColor;
+}
+.textUncover {
+  color: rgba(255, 255, 255, 0);
+  animation: 1s ease-in-out var(--delay) infinite;
+  animation-name: textBlinkBlack;
+}
+.textwrite {
+  color: rgba(255, 255, 255, 0);
+  animation: 1s ease-in-out var(--delay) forwards;
+  animation-name: textUncover;
+}
+.asciiLoad {
+  color: gray;
+  animation: 1s ease-in-out var(--delay) forwards;
+  animation-name: asciiLoad;
+}
+.loadingBarEmpty {
+  background-color: grey;
+  height: var(--height);
+  width: var(--width);
+}
+.loadingBar {
+  height: var(--height);
+  width: var(--width);
+  animation: loadingBar 6s ease-in-out forwards;
+}
+.loadingBarMC {
+  height: var(--height);
+  width: var(--width);
+  animation: loadingBarMC 3s ease-in-out forwards;
+}
+.loadContainerMC {
+  margin-left: 43.5%;
 }
 
-
-.textBlinkW{
-    color: black;
-    animation: 1s ease-in-out infinite;
-    animation-name: textBlinkWhite;
-}
-.textBlinkB{
-    color: white;
-    animation: 1s ease-in-out infinite;
-    animation-name: textBlinkBlack;
-}
-.blinkBottom{
-    color: black;    
-    animation: 3s move-in-steps  steps(1) infinite;
-    animation-name: catBlinkBottom;
-}
-.blinkMid{
-    color: rgba(255, 255, 255, 0);
-    animation: 3s move-in-steps  steps(1) infinite;
-    animation-name: catBlinkMid;
-}
-.blinkTop{
-    color: rgba(255, 255, 255, 0);    
-    animation: 3s move-in-steps  steps(1) infinite;
-    animation-name: catBlinkTop;
+.fallingBlock {
+  width: var(--width);
+  filter: opacity(var(--op));
+  animation: fallingBlock var(--time) linear infinite;
 }
 
-.loadingBarGreen{
-    background-color: var(--loadingBar-color);
+.textBlinkW {
+  color: black;
+  animation: 1s ease-in-out infinite;
+  animation-name: textBlinkWhite;
 }
-.marqueeContainer{
-    margin-left: 36%;
-    margin-top: 2px;
-    margin-bottom: 2px;
-    border-style: solid;
-    overflow: hidden;
-    width: 300px;
-    white-space: nowrap;
+.textBlinkB {
+  color: white;
+  animation: 1s ease-in-out infinite;
+  animation-name: textBlinkBlack;
 }
-.marqueeSteps{
-    animation: marqueeR 20s steps(350, end) infinite;    
+.blinkBottom {
+  color: black;
+  animation: 3s move-in-steps steps(1) infinite;
+  animation-name: catBlinkBottom;
 }
-.marquee{
-    animation: var(--delay) linear infinite;
-    animation-name: marqueeR;
+.blinkMid {
+  color: rgba(255, 255, 255, 0);
+  animation: 3s move-in-steps steps(1) infinite;
+  animation-name: catBlinkMid;
 }
-
-
-.lettersP{
-    display: inline-block;
-    letter-spacing: 0px;
-}
-.inlineBlock{
-    display: inline-block;
-}
-.lettersSpan{
-    letter-spacing: 0px;
+.blinkTop {
+  color: rgba(255, 255, 255, 0);
+  animation: 3s move-in-steps steps(1) infinite;
+  animation-name: catBlinkTop;
 }
 
-.absolutePos{
-    position: absolute;
+.loadingBarGreen {
+  background-color: var(--loadingBar-color);
 }
-.catRelativePos{
-    position: relative;
-    padding-bottom: 351px;
+.marqueeContainer {
+  margin-left: 36%;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  border-style: solid;
+  overflow: hidden;
+  width: 300px;
+  white-space: nowrap;
 }
-.relativePos{
-    position: relative;
+.marqueeSteps {
+  animation: marqueeR 20s steps(350, end) infinite;
 }
-.underlineTxt{
-    transform: translateY(10px);
-}
-
-
-.index1{
-    z-index: 1;
-}
-.index2{
-    z-index: 2;
-}
-.index3{
-    z-index: 3;
-}
-.index4{
-    z-index: 4;
-}
-.index5{
-    z-index: 5;
+.marquee {
+  animation: var(--delay) linear infinite;
+  animation-name: marqueeR;
 }
 
-
-
-.noVMargin{
-    margin-top: 0px;
-    margin-bottom: 0px;
+.lettersP {
+  display: inline-block;
+  letter-spacing: 0px;
 }
-.imageDisplay{
-    height: 595px;
-    width: 595px;
-    
+.inlineBlock {
+  display: inline-block;
 }
-.catMargin{
-    margin-left: 38%;
-}
-.catMargin button{
-    margin-left: 25%;
+.lettersSpan {
+  letter-spacing: 0px;
 }
 
-
-.block{
-    display: block;
+.absolutePos {
+  position: absolute;
 }
-.hidden{
-    display: none;
+.catRelativePos {
+  position: relative;
+  padding-bottom: 351px;
 }
-.visible{
-    display: initial;
+.relativePos {
+  position: relative;
 }
-.flex{
-    display: flex;
-}
-
-#tutorial{
-    word-wrap: break-word;
-    width: 1000px;
-    margin-left: -50%;
-}
-.padding70{
-    padding-top: 70px;
+.underlineTxt {
+  transform: translateY(10px);
 }
 
-
-.strike{
-    text-decoration: line-through;
+.index1 {
+  z-index: 1;
 }
-.strikeMargin{
-    margin-left: 28%;
+.index2 {
+  z-index: 2;
 }
-
-
-.transparent{
-    color: rgba(255, 255, 255, 0);
+.index3 {
+  z-index: 3;
 }
-.textBlack{
-    color: black;
+.index4 {
+  z-index: 4;
 }
-.textGreen{
-    color: green;
-}
-.textBrown{
-    color: brown;
-}
-.displayTextV{
-    overflow-wrap: break-word;
-    width: 5px;
-    margin: 3px;
+.index5 {
+  z-index: 5;
 }
 
-
-.dogGif{
-    size: 50%;
-    background-image: url(../images/dogwalk.gif);
-}
-.maeImg{
-    background-image: url(../images/mae.jpg);
+.marginBottom {
+  margin-bottom: 25px;
 }
 
-.bgWhite{
-    background: white;
+.noVMargin {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.imageDisplay {
+  height: 595px;
+  width: 595px;
+}
+.catMargin {
+  margin-left: 38%;
+}
+.catMargin button {
+  margin-left: 25%;
+}
+
+.block {
+  display: block;
+}
+.hidden {
+  display: none;
+}
+.visible {
+  display: initial;
+}
+.flex {
+  display: flex;
+}
+
+#tutorial {
+  word-wrap: break-word;
+  width: 1000px;
+  margin-left: -50%;
+}
+.padding70 {
+  padding-top: 70px;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+.strikeMargin {
+  margin-left: 28%;
+}
+
+.transparent {
+  color: rgba(255, 255, 255, 0);
+}
+.textBlack {
+  color: black;
+}
+.textGreen {
+  color: green;
+}
+.textBrown {
+  color: brown;
+}
+.displayTextV {
+  overflow-wrap: break-word;
+  width: 5px;
+  margin: 3px;
+}
+
+.dogGif {
+  size: 50%;
+  background-image: url(../images/dogwalk.gif);
+}
+.maeImg {
+  background-image: url(../images/mae.jpg);
+}
+
+.bgWhite {
+  background: white;
 }
 .asciiart-wrap {
-    background: #000;
+  background: #000;
 }
-.asciiartCover{
-    -webkit-background-clip: text;
-    background-clip: text;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    -webkit-text-fill-color: transparent;
-    text-fill-color: transparent;
-    word-break: break-all;
-    color: #fff;
-    font-family: monospace;
-    font-size: 10px;
-    font-weight: bold;
-    letter-spacing: -1px;
-    margin-bottom: 30px;
-    padding: 1px;
-    text-align: justify;
+.asciiartCover {
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  word-break: break-all;
+  color: #fff;
+  font-family: monospace;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  padding: 1px;
+  text-align: justify;
 }
-.asciiartContain{
-    -webkit-background-clip: text;
-    background-clip: text;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    -webkit-text-fill-color: transparent;
-    text-fill-color: transparent;
-    word-break: break-all;
-    color: #fff;
-    font-family: monospace;
-    font-size: 10px;
-    font-weight: bold;
-    letter-spacing: -1px;
-    margin-bottom: 30px;
-    padding: 1px;
-    text-align: justify;
+.asciiartContain {
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  word-break: break-all;
+  color: #fff;
+  font-family: monospace;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  padding: 1px;
+  text-align: justify;
 }
 
-@keyframes loadingBar{
-    0%{
-        width: 0px;
-    }
-    100%{
-        width: 500px;
-    }
+@keyframes loadingBar {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 500px;
+  }
 }
-@keyframes loadingBarMC{
-    0%{
-        width: 0px;
-    }
-    100%{
-        width: 250px;
-    }
+@keyframes loadingBarMC {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 250px;
+  }
 }
-@keyframes fallingBlock{
-    0%{
-        transform: translateY(-100%);
-    }
-    100%{
-        transform: translateY(100vh);
-    }
+@keyframes fallingBlock {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
 }
-@keyframes marqueeR{
-    0%{
-        transform: translatex(100%);
-    }
-    100%{
-        transform: translateX(-1600px);
-    }
+@keyframes marqueeR {
+  0% {
+    transform: translatex(100%);
+  }
+  100% {
+    transform: translateX(-1600px);
+  }
 }
-@keyframes marqueeL{
-    0%{
-        transform: translatex(0%);
-    }
-    100%{
-        transform: translateX(100vw);
-    }
+@keyframes marqueeL {
+  0% {
+    transform: translatex(0%);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
 }
-@keyframes textBlinkWhite{
-    50% {
-        color: rgba(255, 255, 255, 0);;
-    }
+@keyframes textBlinkWhite {
+  50% {
+    color: rgba(255, 255, 255, 0);
+  }
 }
-@keyframes textBlinkBlack{
-    50% {
-        color: black;
-    }
+@keyframes textBlinkBlack {
+  50% {
+    color: black;
+  }
 }
-@keyframes catBlinkBottom{
-    25% {
-        color: rgba(255, 255, 255, 0);
-    }
+@keyframes catBlinkBottom {
+  25% {
+    color: rgba(255, 255, 255, 0);
+  }
 }
-@keyframes catBlinkMid{
-    25% {
-        color: black;
-    }
-    50%{
-        color: rgba(255, 255, 255, 0);
-    }
-    60%{
-        color: black;
-    }
+@keyframes catBlinkMid {
+  25% {
+    color: black;
+  }
+  50% {
+    color: rgba(255, 255, 255, 0);
+  }
+  60% {
+    color: black;
+  }
 }
-@keyframes catBlinkTop{
-    50% {
-        color: black;
-    }
-    60%{
-        color: rgba(255, 255, 255, 0);
-    }
+@keyframes catBlinkTop {
+  50% {
+    color: black;
+  }
+  60% {
+    color: rgba(255, 255, 255, 0);
+  }
 }
-@keyframes textUncover{
-    50% {
-        color: rgba(255, 255, 255, 0);
-    }
-    100%{
-        color: black;
-    }
+@keyframes textUncover {
+  50% {
+    color: rgba(255, 255, 255, 0);
+  }
+  100% {
+    color: black;
+  }
 }
-@keyframes asciiLoad{
-    50% {
-        color: rgb(191, 255, 71);
-    }
-    100%{
-        color: var(--loadingBar-color);
-    }
+@keyframes asciiLoad {
+  50% {
+    color: rgb(191, 255, 71);
+  }
+  100% {
+    color: var(--loadingBar-color);
+  }
 }
-@keyframes textColAnim{
-    50% {
-        color: #d2738a;
-    }
+@keyframes textColAnim {
+  50% {
+    color: #d2738a;
+  }
 }
-@keyframes textShadowAndColor{
-    50% {
-        color: #d2738a;
-        text-shadow: #d2738a 1px 4px 5px;
-    }
+@keyframes textShadowAndColor {
+  50% {
+    color: #d2738a;
+    text-shadow: #d2738a 1px 4px 5px;
+  }
 }
-@keyframes textShadow{
-    50% {
-        text-shadow: #d2738a 1px 4px 5px;
-    }
+@keyframes textShadow {
+  50% {
+    text-shadow: #d2738a 1px 4px 5px;
+  }
 }
